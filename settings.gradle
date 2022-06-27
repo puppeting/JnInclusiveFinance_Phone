@@ -1,4 +1,4 @@
-rootProject.name='GnInclusiveFinance_Phone'
+rootProject.name='JnInclusiveFinance_Phone'
 include ':app'
 include ':text'
 //setBinding(new Binding([gradle: this]))                                // new

@@ -44,14 +44,13 @@
 
             <ImageView
                 android:id="@+id/img_mid"
-                android:layout_width="240dp"
-                android:layout_height="36dp"
-                android:layout_marginTop="138dp"
+                android:layout_width="280dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="128dp"
                 android:scaleType="fitCenter"
-                 android:background="@mipmap/login_title"
+                android:background="@mipmap/app_logo_text"
                 android:transitionName="shareLogo"
-                android:layout_marginRight="@dimen/margin_40"
-                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/imageView"
                 tools:ignore="MissingConstraints" />
@@ -61,7 +60,7 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginTop="@dimen/margin_60"
+                android:layout_marginTop="@dimen/margin_70"
                 app:boxStrokeColor="#999"
                 android:theme="@style/EditPersonInfoInputStyle"
                 app:layout_constraintEnd_toEndOf="parent"
