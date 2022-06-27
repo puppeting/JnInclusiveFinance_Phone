@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.MainActivityModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp" >
+
+       <com.scwang.smart.refresh.layout.SmartRefreshLayout
+           android:id="@+id/mRefreshLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+            <com.scwang.smart.refresh.header.MaterialHeader
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/linearLayout"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+
+               <include layout="@layout/layout_bg_list_top"/>
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/roundLinearLayout2"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_marginTop="150dp"
+                   android:orientation="vertical"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintTop_toTopOf="parent">
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/mRecyclerView"
+                       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:paddingTop="@dimen/margin_8"
+                       android:paddingStart="@dimen/dp_8"
+                       android:paddingEnd="@dimen/dp_8"
+                       android:layout_marginStart="@dimen/margin_8"
+                       android:layout_marginEnd="@dimen/margin_8"
+                       android:background="@drawable/bg_mine_white"
+                       android:elevation="5dp"
+                       tools:listitem="@layout/item_backlog"
+                       android:orientation="vertical"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+                   </androidx.recyclerview.widget.RecyclerView>
+
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

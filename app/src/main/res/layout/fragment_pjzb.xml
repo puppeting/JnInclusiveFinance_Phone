@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+    <com.bin.david.form.core.SmartTable
+        android:id="@+id/table"
+        android:layout_marginTop="@dimen/dp_11"
+
+        android:layout_marginLeft="@dimen/dp_11"
+        android:layout_marginBottom="@dimen/dp_11"
+        android:layout_marginRight="@dimen/dp_11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</layout>

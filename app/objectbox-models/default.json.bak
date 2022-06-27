@@ -1,0 +1,74 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3170687423758449490",
+      "lastPropertyId": "8:8050044701701003187",
+      "name": "SearchTravelBean",
+      "properties": [
+        {
+          "id": "1:7332483261324706941",
+          "name": "code",
+          "type": 9
+        },
+        {
+          "id": "2:1746317939649062827",
+          "name": "image",
+          "type": 9
+        },
+        {
+          "id": "3:8214354988396172723",
+          "name": "pCode",
+          "type": 9
+        },
+        {
+          "id": "4:7757558588050359082",
+          "name": "haveChild",
+          "type": 9
+        },
+        {
+          "id": "5:131612564865890243",
+          "name": "isFavorite",
+          "type": 1,
+          "flags": 4
+        },
+        {
+          "id": "6:83615901909972606",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "7:3592385251971701886",
+          "name": "date",
+          "type": 10
+        },
+        {
+          "id": "8:8050044701701003187",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6872680600897305939",
+          "name": "list",
+          "targetId": "1:3170687423758449490"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "1:3170687423758449490",
+  "lastIndexId": "0:0",
+  "lastRelationId": "1:6872680600897305939",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

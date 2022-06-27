@@ -1,0 +1,335 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "企业分析",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "主要风险点分析",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "风险控制措施",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "第三方打听",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "调查结论",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "授信金额(元)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "期限(月)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "还款方式",
+    "valueHint": "",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "按月付息,到期还本",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "等额本金",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "等额本息",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "利率(%)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "月分期还款额",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "类型",
+    "valueHint": "",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "保证",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "质押",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "抵押",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "信用",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "是否循环",
+    "valueHint": "",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "是",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "用信方式",
+    "valueHint": "",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "柜面用信",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "手机银行",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保人",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "调查结论特殊情况/其他条件(抵押等)",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "抵押物名称",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "抵(质)押人",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "产权证号码",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "抵(质)押物价值(元)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "坐落地址",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 19,
+    "keyName": "客户经理签字",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "日期",
+    "valueHint": "",
+    "requireable": false,
+    "editable": false,
+    "inputType": 1,
+    "spanSize": 2
+  }
+]

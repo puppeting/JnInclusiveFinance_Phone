@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/riskBaseFragment">
+
+
+    <fragment
+        android:id="@+id/riskBaseFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.risk.RiskBaseFragment"
+        android:label="creditAuthorizationFragment"
+        tools:layout="@layout/fragment_risk_base" >
+        <action android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity"/>
+    </fragment>
+
+    <activity
+        android:id="@+id/navigation_navActivity"
+        android:name="com.inclusive.finance.jh.ui.NavActivity"
+        tools:layout="@layout/activity_graph_nav" />
+
+</navigation>

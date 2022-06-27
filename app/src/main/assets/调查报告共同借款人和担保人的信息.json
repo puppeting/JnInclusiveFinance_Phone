@@ -1,0 +1,130 @@
+[
+  {
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 12,
+  "valueName": "",
+  "keyName": "关联人",
+  "valueHint": "",
+  "enums12": [
+    {
+      "valueName": "共同借款人",
+      "keyName": ""
+    },
+    {
+      "valueName": "保证人",
+      "keyName": ""
+    }
+  ],
+  "requireable": false,
+  "isSingleChecked": true,
+  "editable": true,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "姓名",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "关系",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "身份证号",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "家庭电话",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "主营业务或职务(如受雇)",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "主要资产",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "月收入",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "spanSize": 2
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "家庭地址",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 6
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 11,
+  "valueName": "",
+  "keyName": "经营地址或工作单位地址",
+  "valueHint": "",
+  "requireable": true,
+  "editable": true,
+  "inputType": 1,
+  "spanSize": 6
+}
+]

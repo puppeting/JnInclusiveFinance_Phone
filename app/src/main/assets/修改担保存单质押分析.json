@@ -1,0 +1,120 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "存单账号",
+    "valueHint": "请输入存单账号",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "存单名称",
+    "valueHint": "请选择存单名称",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "存本取息",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "存单金额(万元)",
+    "valueHint": "请输入存单金额",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 16,
+    "valueName": "",
+    "keyName": "存入日期",
+    "valueHint": "请选择存入日期",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "到期利息(元)",
+    "valueHint": "请输入到期利息",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 16,
+    "valueName": "",
+    "keyName": "到期日期",
+    "valueHint": "请选择到期日期",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "质押比例(%)",
+    "valueHint": "请输入质押比例",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "存单所属行",
+    "valueHint": "请输入存单所属行",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "备注信息",
+    "valueHint": "请输入备注信息",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/white"
+            app:contentInsetEndWithActions="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:navigationIcon="@drawable/tool_arrow_back_black_24dp"
+            app:titleMargin="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+
+            <androidx.appcompat.widget.ButtonBarLayout
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/actionBarSize"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/mTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:maxEms="10"
+                    android:text=""
+                    android:textColor="@color/color_toolBar_title"
+                    android:textSize="16sp" />
+
+            </androidx.appcompat.widget.ButtonBarLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableOverScrollDrag="false"
+            app:srlEnableRefresh="false">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bindphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="绑定手机号"
+                        android:textColor="#FF212121"
+                        android:textSize="@dimen/sp_18"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center"
+                        android:textColor="#FF212121"
+                        android:textSize="@dimen/sp_12"
+                        app:layout_constraintStart_toStartOf="@+id/tv_bindphone"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_bindphone"
+                        tools:text="请使用手机号码 + 验证码" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLay"
+                        style="@style/Widget.Design.TextInputLayout"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_50"
+                        android:theme="@style/EditPersonInfoInputStyle"
+                        app:errorEnabled="true"
+                        app:helperTextEnabled="true"
+                        app:layout_constraintStart_toStartOf="@+id/tv_phone"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_phone">
+
+
+                        <com.inclusive.finance.jh.widget.VerificationCodeEditText
+                            android:id="@+id/ed_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:layout_marginBottom="@dimen/dp_20"
+                            android:hint="请输入验证码"
+                            android:inputType="number"
+                            android:text=""
+                            android:textCursorDrawable="@drawable/color_cursor_blue"
+                            android:textSize="25sp"
+                            app:bottomLineHeight="@dimen/dp_2"
+                            app:bottomLineNormalColor="@color/line"
+                            app:bottomLineSelectedColor="@color/color_main_red"
+                            app:figures="6"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_phone"
+                            app:selectedBackgroundColor="@color/Transparent"
+                            app:verCodeMargin="@dimen/margin_15" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/bt_recode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:padding="@dimen/margin_10"
+                        android:text="重新发送"
+                        android:textColor="@color/color_btn_red"
+                        android:textSize="@dimen/sp_10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textInputLay"
+                        app:layout_constraintTop_toBottomOf="@+id/textInputLay" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.core.widget.NestedScrollView>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    </LinearLayout>
+</layout>

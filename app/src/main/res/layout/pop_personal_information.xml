@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.MainActivityModel" />
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <com.flyco.roundview.RoundRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_margin="32dp"
+        android:layout_gravity="center"
+        app:rv_backgroundColor="@color/white"
+        app:rv_cornerRadius="@dimen/dp_8">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="24dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_my_info"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="个人资料"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#2e2e2e"
+            android:textSize="@dimen/sp_14" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/tv_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@id/tv_my_info"
+            android:layout_marginTop="56dp"
+            android:gravity="center"
+            android:text="姓名:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name_title"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/tv_name_title"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:singleLine="true"
+            tools:text="王蓝光"
+            android:text="@{data.userInfo.userName}"
+            android:textColor="#23a7f0"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/tv_profile_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_title"
+            android:layout_alignEnd="@id/tv_name_title"
+            android:layout_marginTop="26dp"
+            android:text="用户头像:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@id/tv_profile_picture"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@id/tv_profile_picture"
+             />
+
+
+        <TextView
+            android:id="@+id/tv_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/profile_image"
+            android:layout_alignEnd="@id/tv_my_info"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:text="所在支行:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/et_branch"
+            android:text="@{data.userInfo.bankBranch}"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/tv_branch"
+            android:layout_toEndOf="@id/tv_branch"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="#23a7f0"
+            android:textSize="@dimen/sp_12"
+            tools:text="牛山支行" />
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_branch"
+            android:layout_alignEnd="@id/tv_my_info"
+            android:layout_marginTop="@dimen/dp_14"
+            android:gravity="center"
+            android:text="职位:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/et_position"
+            android:text="@{data.userInfo.positionName}"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/tv_position"
+            android:layout_toEndOf="@id/tv_position"
+            android:layout_marginStart="17dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="#23a7f0"
+            android:textSize="@dimen/sp_12"
+            tools:text="营销经理" />
+
+        <TextView
+            android:id="@+id/tv_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_position"
+            android:layout_alignEnd="@id/tv_my_info"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:text="手机号码:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone_num"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_phone_num"
+            android:layout_toEndOf="@id/tv_phone_num"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="@{data.userInfo.telephone}"
+            android:inputType="phone"
+            android:paddingStart="@dimen/dp_8"
+            android:paddingEnd="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"
+            tools:text="1599999999" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/tv_phone_num"
+            android:layout_alignEnd="@id/tv_my_info"
+            android:layout_marginTop="@dimen/dp_16"
+            android:gravity="center"
+            android:text="邮件:"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_email"
+            android:layout_toEndOf="@id/tv_email"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_8"
+            android:text="@{data.userInfo.email}"
+            android:paddingEnd="@dimen/dp_8"
+            android:singleLine="true"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"
+            tools:text="1599999999@qq.com" />
+
+
+        <ImageView
+            android:id="@+id/profile_image_lager"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="38dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image_lager"
+            android:layout_alignStart="@id/profile_image_lager"
+            android:layout_alignEnd="@id/profile_image_lager"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/profile_image_lager"
+            android:layout_alignEnd="@+id/profile_image_lager"
+            android:layout_alignBottom="@+id/et_email"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_save"
+                android:onClick="@{(v)->presenterClick.onClick(v)}"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="保存"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+    </com.flyco.roundview.RoundRelativeLayout>
+</layout>
+
+
+

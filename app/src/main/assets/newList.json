@@ -1,0 +1,29 @@
+[{
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "原有额度分项列表",
+    "listBean": {
+    "actionTypes": "0,1,2,3,4,5",
+    "getUrl": "",
+    "saveUrl": "",
+    "deleteUrl": "",
+    "list": [],
+    "titleList": [
+    {
+        "key": "aa",
+        "ems": "12",
+        "value": "贷款品种"
+    },
+    {
+        "key": "bb",
+        "ems": "12",
+        "value": "授信额度(万元)"
+    }
+    ]
+},
+    "editable": true,
+    "spanSize": 6
+}]

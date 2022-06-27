@@ -1,0 +1,22 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 30,
+    "keyName": "职业分类",
+    "valueName": "",
+    "isSingleChecked": true,
+    "treeUrl": "树形地址",
+    "spanSize": 6
+  },
+  {
+    "title": "",
+    "value": "ma",
+    "canCheck": "true 是否可选",
+    "checked": "true 选中状态（自用）",
+    "parentKey": "",
+    "parentValue": "",
+    "children": null
+  }
+]

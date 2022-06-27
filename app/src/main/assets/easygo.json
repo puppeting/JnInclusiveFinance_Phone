@@ -1,0 +1,22 @@
+{
+  "easyGoVersion": "1.0",
+  "client": "com.inclusive.finance",
+  "logicEntities": [
+    {
+      "head": {
+        "function": "magicwindow",
+        "required": "true"
+      },
+      "body": {
+        "mode":"1",
+        "activityPairs":[
+          {"from":"com.inclusive.finance.ui.login.StartPageTransActivity","to":"*"},
+          {"from":"com.inclusive.finance.ui.MainActivity","to":"*"},
+          {"from":"com.inclusive.finance.ui.ApplyActivity","to":"com.luck.picture.lib.PictureSelectorActivity"}
+        ],
+        "transActivities":[
+        ]
+      }
+    }
+  ]
+}

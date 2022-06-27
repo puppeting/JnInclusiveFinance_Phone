@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <import type="android.view.View" />
+        <import type="org.apache.commons.lang3.StringUtils" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--&lt;!&ndash;            <com.google.android.material.tabs.TabLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/tabLay"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:visibility="@{StringUtils.isEmpty(data.dbrid)?View.VISIBLE:View.GONE}"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content">&ndash;&gt;-->
+<!--&lt;!&ndash;                <com.google.android.material.tabs.TabItem&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tab_br"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="申请人征信"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <com.google.android.material.tabs.TabItem&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:id="@+id/tab_po"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="配偶信息"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </com.google.android.material.tabs.TabLayout>&ndash;&gt;-->
+<!--            <Space-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                />-->
+<!--&lt;!&ndash;            <com.google.android.material.chip.Chip&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/bt_search"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:onClick="@{(v)->presenterClick.onClick(v)}"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="查询"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="@dimen/dp_10"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipBackgroundColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipCornerRadius="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipEndPadding="@dimen/margin_25"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipStartPadding="@dimen/margin_25"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipStrokeColor="@color/colorPrimary"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:chipStrokeWidth="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:rippleColor="@color/white" />&ndash;&gt;-->
+<!--            <com.google.android.material.chip.Chip-->
+<!--                android:id="@+id/bt_refresh"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="刷新"-->
+<!--                android:onClick="@{(v)->presenterClick.onClick(v)}"-->
+<!--                android:layout_marginEnd="@dimen/margin_25"-->
+<!--                android:layout_marginStart="@dimen/dp_10"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                app:chipBackgroundColor="@color/white"-->
+<!--                app:chipCornerRadius="5dp"-->
+<!--                app:chipEndPadding="@dimen/margin_25"-->
+<!--                app:chipStartPadding="@dimen/margin_25"-->
+<!--                app:chipStrokeColor="@color/colorPrimary"-->
+<!--                app:chipStrokeWidth="1dp"-->
+<!--                app:rippleColor="@color/white" />-->
+<!--        </LinearLayout>-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/line"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dp_20"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:visibility="@{StringUtils.isEmpty(data.dbrid)?data.seeOnly?View.GONE:View.VISIBLE:View.GONE}"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#fbdac6"-->
+<!--            android:gravity="end|center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="@dimen/dp_4"-->
+<!--            android:paddingBottom="@dimen/dp_4"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <Space-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"/>-->
+<!--&lt;!&ndash;            <com.google.android.material.button.MaterialButton&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/bt_save"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="@dimen/dp_15"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/margin_45"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:onClick="@{(v)->presenterClick.onClick(v)}"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="保存" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.button.MaterialButton&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/bt_next"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/margin_45"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="@dimen/dp_15"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginEnd="@dimen/dp_15"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:onClick="@{(v)->presenterClick.onClick(v)}"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="下一步" />&ndash;&gt;-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+</layout>

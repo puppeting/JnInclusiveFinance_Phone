@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_5">
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="constraintLay1,constraintLay1_01,constraintLay2,constraintLay3,constraintLay14,constraintLay4,constraintLay5,constraintLay6,constraintLay7,constraintLay8,constraintLay9,constraintLay10,constraintLay11,constraintLay12,constraintLay13,constraintLay15,constraintLay16,constraintLay17,constraintLay18,constraintLay19,constraintLay20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.helper.widget.Layer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="@{data.businessType==data.BUSINESS_TYPE_APPLY?View.GONE:View.VISIBLE}"
+            app:constraint_referenced_ids="constraintLay10,constraintLay11,constraintLay12,constraintLay13,constraintLay15,constraintLay16,constraintLay17,constraintLay18,constraintLay19,constraintLay20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_khxx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.xxgkCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.xxgkCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/complete1"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.xxgkCheck?@color/color_main_green:@color/MaterialGrey500}"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/color_main_green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="信息概况"
+                android:textColor="@{data.applyCheckBean.xxgkCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.xxgkCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1"
+                tools:textColor="@color/colorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay1_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView1_01"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_khxx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.gsxxCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.gsxxCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/complete1_01"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.gsxxCheck?@color/color_main_green:@color/MaterialGrey500}"
+                tools:ignore="ContentDescription"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="工商信息"
+                android:textColor="@{data.applyCheckBean.gsxxCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.gsxxCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1_01" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_zxsq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.jtcyCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.jtcyCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/color_main_cyan" />
+
+            <ImageView
+                android:id="@+id/complete2"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.jtcyCheck?@color/color_main_green:@color/MaterialGrey500}"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="家庭成员"
+                android:textColor="@{data.applyCheckBean.jtcyCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.jtcyCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                tools:textColor="@color/color_main_cyan" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_zrxx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.sxsqdCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sxsqdCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription"
+                tools:tint="@color/MaterialGrey400" />
+
+            <ImageView
+                android:id="@+id/complete3"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.sxsqdCheck?@color/color_main_green:@color/MaterialGrey500}"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="授信申请单"
+                android:textColor="@{data.applyCheckBean.sxsqdCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sxsqdCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                tools:textColor="@color/MaterialGrey400" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_ywsq"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.whywCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.whywCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete4"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.whywCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="我行业务"
+                android:textColor="@{data.applyCheckBean.whywCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.whywCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_xcdc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.fxtcCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.fxtcCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete5"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.fxtcCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="风险探测"
+                android:textColor="@{data.applyCheckBean.fxtcCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.fxtcCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dbxx"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.zxglCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.zxglCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete6"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.zxglCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="征信管理"
+                android:textColor="@{data.applyCheckBean.zxglCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.zxglCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.dbdyCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dbdyCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete7"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.dbdyCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+
+                android:text="担保情况"
+                android:textColor="@{data.applyCheckBean.dbdyCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dbdyCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.yxzlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.yxzlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete8"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.yxzlCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="影像资料"
+                android:textColor="@{data.applyCheckBean.yxzlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.yxzlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.csjgCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.csjgCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete9"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.csjgCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="初审结果"
+                android:textColor="@{data.applyCheckBean.csjgCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.csjgCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.nswdCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.nswdCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete10"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.nswdCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="你说我贷"
+                android:textColor="@{data.applyCheckBean.nswdCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.nswdCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.sddcCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sddcCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete11"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.sddcCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="实地调查"
+                android:textColor="@{data.applyCheckBean.sddcCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sddcCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.llsrCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.llsrCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete12"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.llsrCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="履历收入"
+                android:textColor="@{data.applyCheckBean.llsrCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.llsrCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.sxykhCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sxykhCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete13"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.sxykhCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="上下游客户"
+                android:textColor="@{data.applyCheckBean.sxykhCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.sxykhCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.xjlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.xjlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete14"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.xjlCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="现金流"
+                android:textColor="@{data.applyCheckBean.xjlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.xjlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.zcfzCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.zcfzCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete15"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.zcfzCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="资产负债"
+                android:textColor="@{data.applyCheckBean.zcfzCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.zcfzCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.syjbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.syjbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete16"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.syjbCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="损益简表"
+                android:textColor="@{data.applyCheckBean.syjbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.syjbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.cwjbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.cwjbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete17"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.cwjbCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="财务简表"
+                android:textColor="@{data.applyCheckBean.cwjbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.cwjbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.pjzbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.pjzbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete18"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.pjzbCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="评级指标"
+                android:textColor="@{data.applyCheckBean.pjzbCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.pjzbCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.dcbgCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dcbgCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete19"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.dcbgCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="调查报告"
+                android:textColor="@{data.applyCheckBean.dcbgCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dcbgCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white"
+                android:src="@mipmap/icon_apply_dcbg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:tint="@{data.applyCheckBean.dcjlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dcjlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/complete20"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@{data.applyCheckBean.completeCheckBean.dcjlCheck?@color/color_main_green:@color/MaterialGrey500}"
+
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:minEms="5"
+                android:text="调查结论"
+                android:textColor="@{data.applyCheckBean.dcjlCheck?@color/colorPrimary:data.applyCheckBean.completeCheckBean.dcjlCheck?@color/color_main_cyan:@color/MaterialGrey400}"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView20" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

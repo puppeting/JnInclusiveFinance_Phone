@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="recyclerView"
+            type="androidx.recyclerview.widget.RecyclerView" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <import type="android.view.View" />
+        <import type="com.inclusive.finance.jh.utils.SZWUtils" />
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_8"
+            >
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textSize="@dimen/sp_14"
+                android:visibility="@{StringUtils.isEmpty(data.absKey())?View.GONE:View.VISIBLE}"
+                android:text="@{SZWUtils.INSTANCE.setRequiredColorRed(data.absKey,data.requireable)}"
+                android:textColor="@{data.editable?@color/color_text_title:@color/color_not_editable}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TextView" />
+
+            <com.flyco.roundview.RoundLinearLayout
+
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_key"
+                app:layout_constraintTop_toBottomOf="@+id/tv_key"
+                app:rv_backgroundColor="@{data.editable?@color/white:@color/app_bg}"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@{data.requireable?@color/colorTintRed:@color/line}"
+                app:rv_strokeWidth="1dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="@{data.editable}"
+                    android:drawableEnd="@drawable/selector_triangle"
+                    android:gravity="center_vertical"
+                    android:hint="@{data.valueHint}"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="TextV" />
+
+            </com.flyco.roundview.RoundLinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bt_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_key"
+                app:layout_constraintTop_toTopOf="@+id/tv_key"
+                app:srcCompat="@drawable/ic_baseline_add_box_24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:paddingStart="@dimen/dp_5"
+            android:paddingEnd="@dimen/dp_5"
+            android:layout_marginTop="@dimen/margin_70"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_key_mc" />
+    </FrameLayout>
+
+</layout>

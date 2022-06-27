@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+            <variable
+                name="holder"
+                type="com.chad.library.adapter.base.viewholder.BaseViewHolder" />
+            <variable
+                name="data"
+                type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_height="wrap_content">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minWidth="180dp"
+            android:layout_marginStart="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+<!--            app:rv_backgroundColor="@{Integer.valueOf(data.key)%2==0?@color/DarkOrange:@color/Red}"-->
+<!--            app:rv_cornerRadius="@dimen/margin_100"-->
+<!--            tools:rv_backgroundColor="@color/Red"-->
+            <com.flyco.roundview.RoundTextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/dp_1"
+                android:gravity="center"
+                android:textColor="@color/color_text_title"
+                  android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:visibility="gone"
+                  />
+<!--            tools:textColor="@color/Red"-->
+<!--            android:textColor="@{Integer.valueOf(data.key)%2==0?@color/DarkOrange:@color/Red}"-->
+<!--            app:rv_backgroundColor="@color/white"-->
+<!--            app:rv_cornerRadius="@dimen/margin_100"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@{data.value}"
+                android:textColor="@color/color_text_title"
+                 android:textSize="@dimen/sp_14"
+                tools:text="申请信息" />
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

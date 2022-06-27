@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTop="@{data.visibility? 15:0}"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="@dimen/margin_25"
+        android:paddingEnd="@dimen/margin_25">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@{data.absKey}"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_14"
+            android:visibility="@{StringUtils.isEmpty(data.absKey())?View.INVISIBLE:View.VISIBLE}"
+            app:drawableStartCompat="@{data.requireable?@drawable/ic_baseline_lens_24:null}"
+            app:drawableTint="@{data.requireable?@color/Red:@color/white}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TextView" />
+
+        <com.flyco.roundview.RoundLinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_key"
+            app:layout_constraintTop_toBottomOf="@+id/tv_key"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="5dp"
+            app:rv_strokeColor="@color/DarkOrange"
+            app:rv_strokeWidth="1dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLay"
+            android:minHeight="72dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/flow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_8"
+                app:flow_horizontalGap="10dp"
+                app:flow_horizontalStyle="spread_inside"
+                app:flow_maxElementsWrap="16"
+                app:flow_verticalGap="15dp"
+                app:flow_verticalStyle="packed"
+                app:flow_wrapMode="aligned"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

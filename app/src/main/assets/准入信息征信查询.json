@@ -1,0 +1,457 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "当前负债汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "当前负债汇总",
+    "spanSize": 6,
+    "listBean": {
+      "actionTypes": "4",
+      "pdfUrl": "",
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信机构数"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "授信贷款总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "贷款用信总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "本行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "他行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "担保情况汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "担保情况汇总",
+    "spanSize": 6,
+    "listBean": {
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信机构数"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "授信贷款总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "贷款用信总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "本行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "他行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "3",
+    "valueName": "呆账信息汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "呆账信息汇总",
+    "spanSize": 6,
+    "listBean": {
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信机构数"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "授信贷款总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "贷款用信总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "本行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "他行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "4",
+    "valueName": "未结清贷款汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "未结清贷款汇总",
+    "spanSize": 6,
+    "listBean": {
+      "list": [
+        {
+          "no": "笔数"
+        },
+        {
+          "no": "余额(元)"
+        }
+      ],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "6",
+          "value": ""
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "总贷款情况"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "住房贷款情况"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "经营贷款情况"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "消费贷款情况"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "助学贷款情况"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "汽车贷款情况"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "5",
+    "valueName": "违约情况汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "违约情况汇总",
+    "spanSize": 6,
+    "listBean": {
+      "list": [
+        {
+          "no": "近5年各类贷款累计逾期期数"
+        },
+        {
+          "no": "近5年信用卡累计逾期期数"
+        }
+      ],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "18",
+          "value": ""
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "2016"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "2017"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "2018"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "2019"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "2020"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "6",
+    "valueName": "信用卡汇总",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "信用卡汇总",
+    "spanSize": 6,
+    "listBean": {
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信机构数"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "授信贷款总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "贷款用信总额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "本行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "他行贷款余额(元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "7",
+    "valueName": "负面信息",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "是否为失信执行人",
+    "editable": false,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "负面信息",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "笔数"
+      },
+        {
+          "no": "余额(元)"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "10",
+          "value": ""
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "欠税信息"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "行政罚款"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "民事判决信息"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "涉诉情况"
+        }
+      ]
+    }
+  }
+,
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "系统审核结论",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "通过",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "未通过",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "不良原因陈述",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 5,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "人工干预陈述",
+    "minLines": 5,
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

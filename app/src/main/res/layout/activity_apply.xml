@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ApplyActivity">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--引入的部分-->
+        <View
+            android:id="@+id/view_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <include
+            android:id="@+id/action_bar_custom"
+            layout="@layout/action_bar_custom"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLay"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/Black"
+            app:tabIndicatorFullWidth="false"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--引入的部分-->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/apply_nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation" />
+        <!--            app:navGraph="@navigation/nav_graph_apply" />-->
+
+    </LinearLayout>
+</layout>

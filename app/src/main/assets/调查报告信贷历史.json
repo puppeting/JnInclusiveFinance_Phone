@@ -1,0 +1,97 @@
+[{
+  "valueName": "信贷历史记录",
+  "spanSize": 6,
+  "keyName": "1",
+  "layoutType": 10
+}, {
+  "listBean": {
+    "getUrl": "/wd/sxsqYwsq/get",
+    "saveUrl": "/wd/sxsqYwsq/save",
+    "titleList": [{
+      "ems": "8",
+      "value": "融资来源",
+      "key": "rzly"
+    }, {
+      "ems": "8",
+      "value": "贷款金额",
+      "key": "dkje"
+    }, {
+      "ems": "8",
+      "value": "起止日期",
+      "key": "qzrq"
+    }, {
+      "ems": "8",
+      "value": "用途",
+      "key": "yt"
+    }, {
+      "ems": "8",
+      "value": "金额",
+      "key": "je"
+    }, {
+      "ems": "8",
+      "value": "担保方式",
+      "key": "dbfs"
+    }, {
+      "ems": "8",
+      "value": "还款方式",
+      "key": "hkfs"
+    }, {
+      "ems": "8",
+      "value": "逾期信息",
+      "key": "yqxx"
+    }
+    ],
+    "list": [],
+    "actionTypes": "2"
+  },
+  "valueName": "原有额度分项列表",
+  "editable": true,
+  "spanSize": 6,
+  "keyName": "1",
+  "layoutType": 13,
+  "model": ""
+}, {
+  "valueName": "为他人担保情况",
+  "spanSize": 6,
+  "keyName": "2",
+  "layoutType": 10
+}, {
+  "listBean": {
+    "getUrl": "/wd/sxsqYwsq/get",
+    "saveUrl": "/wd/sxsqYwsq/save",
+    "titleList": [{
+      "ems": "10",
+      "value": "被担保人姓名",
+      "key": "bdbrxm"
+    }, {
+      "ems": "9",
+      "value": "与被担保人关系",
+      "key": "ybdbrgx"
+    }, {
+      "ems": "10",
+      "value": "融资机构",
+      "key": "rzjg"
+    }, {
+      "ems": "9",
+      "value": "担保额度",
+      "key": "dbed"
+    }, {
+      "ems": "10",
+      "value": "担保起止日期",
+      "key": "dbqzrq"
+    }, {
+      "ems": "10",
+      "value": "担保方式",
+      "key": "dbfs"
+    }],
+    "deleteUrl": "/wd/sxsqYwsq/delete",
+    "list": [],
+    "actionTypes": "2"
+  },
+  "valueName": "变更额度分项列表",
+  "editable": true,
+  "spanSize": 6,
+  "keyName": "1",
+  "layoutType": 13,
+  "model": ""
+}]

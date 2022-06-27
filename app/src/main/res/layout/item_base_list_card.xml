@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.google.gson.JsonObject" />
+        <variable
+            name="checkBean"
+            type="com.inclusive.finance.jh.bean.ListBean" />
+        <import type="com.inclusive.finance.jh.utils.SZWUtils"/>
+        <import type="android.view.View"/>
+        <import type="com.blankj.utilcode.util.StringUtils"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+         android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_bg"
+            android:paddingBottom="@dimen/dp_15"
+            android:background='@{checkBean.checked ==true ? @color/AliceBlue :@color/white}'
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/topLay"
+                android:visibility='@{(StringUtils.isEmpty(SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation3"))&amp;StringUtils.isEmpty(SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation4")))? View.GONE:View.VISIBLE}'
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:layout_marginBottom="@dimen/dp_8"
+                    android:layout_marginStart="@dimen/dp_15"
+                    android:id="@+id/topName"
+                    android:text='@{SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation3")}'
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/topTime"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="320302199401021234" />
+
+                <TextView
+                    android:id="@+id/topTime"
+                    android:layout_marginEnd="@dimen/dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_14"
+                    android:text='@{SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation4")}'
+                    app:layout_constraintBottom_toBottomOf="@+id/topName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/topName"
+                    tools:text="2021-11-11 10:44" />
+                <View
+
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/line"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/topLay"
+                    app:layout_constraintBottom_toBottomOf="@+id/topLay" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textStyle="bold"
+                android:text='@{SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation1")}'
+                android:layout_marginStart="@dimen/dp_15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topLay"
+                tools:text="小迪" />
+
+            <com.flyco.roundview.RoundTextView
+                android:visibility="@{(StringUtils.isEmpty(status.text))? View.GONE:View.VISIBLE}"
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="4dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12"
+                android:text='@{SZWUtils.INSTANCE.getJsonObjectString(data,"listLocation2")}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/name"
+                app:rv_backgroundColor="@color/color_main_green"
+                app:rv_cornerRadius_BL="20dp"
+                app:rv_cornerRadius_TL="20dp"
+                tools:text="流程中" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/contentLay"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+            <TextView
+                android:id="@+id/bt_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:text="更多"
+                android:textColor="@color/color_text_subTitle"
+                android:textSize="@dimen/sp_12"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_change"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toTopOf="@+id/bt_change" />
+
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_change"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:paddingStart="35dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="35dp"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="修改"
+                android:textColor="@color/color_main_orange"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/contentLay"
+                app:layout_constraintTop_toBottomOf="@+id/contentLay"
+                app:rv_cornerRadius="20dp"
+                app:rv_strokeColor="@color/color_main_orange"
+                app:rv_strokeWidth="1dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_seeOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="查看详情"
+                android:textColor="@color/Gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/bt_change"
+                app:layout_constraintTop_toBottomOf="@+id/contentLay"
+                app:rv_cornerRadius="20dp"
+                app:rv_strokeColor="@color/Gray"
+                app:rv_strokeWidth="1dp" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/bt_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/white"
+                android:elevation="2dp"
+                android:paddingStart="20dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="征信PDF"
+                android:clickable="true"
+                android:textColor="@color/Gray"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/bt_change"
+                app:layout_constraintEnd_toStartOf="@+id/bt_seeOnly"
+                app:layout_constraintTop_toTopOf="@+id/bt_change"
+                app:rv_cornerRadius="20dp"
+                app:rv_strokeColor="@color/Gray"
+                app:rv_strokeWidth="1dp"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

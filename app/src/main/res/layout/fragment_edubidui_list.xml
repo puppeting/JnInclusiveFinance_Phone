@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.MainActivityModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/action_bar_custom"
+            layout="@layout/action_bar_custom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20">
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+                app:rv_strokeWidth="1dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/down_rwmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:drawableEnd="@drawable/selector_triangle"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="TextV" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+                app:rv_strokeWidth="1dp">
+
+                <com.inclusive.finance.jh.widget.ClearWriteEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@null"
+                    android:hint="客户姓名或身份证号"
+                    android:padding="@dimen/dp_5"
+                    android:textColorHint="#868686"
+                    android:textSize="@dimen/sp_12" />
+            </com.flyco.roundview.RoundLinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/dp_16"
+                android:onClick="@{(v)->presenterClick.onClick(v)}"
+                android:text="查询"
+                android:textSize="@dimen/sp_14" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_more"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/dp_8"-->
+            <!--                android:text="更多"-->
+            <!--                android:textColor="@color/colorPrimary"-->
+            <!--                app:drawableEndCompat="@drawable/ic_baseline_more_horiz_24"-->
+            <!--                app:drawableTint="@color/colorPrimary" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20">
+
+            <com.google.android.material.chip.ChipGroup
+                android:animateLayoutChanges="true"
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="true">
+
+                <!-- Chips can be declared here, or added dynamically. -->
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_delete"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="删除对比"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="开始对比"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+
+
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_see"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="查看对比"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+
+
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="提交完成"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+
+
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipCheckProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="查看进度"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+
+
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/mRefreshLayout"
+            app:srlEnableFooterTranslationContent="false"
+            app:srlFooterInsetStart="24dp"
+            app:srlFooterHeight="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_24"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:srlEnableOverScrollDrag="false">
+
+            <com.scwang.smart.refresh.header.MaterialHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srlAccentColor="@android:color/black" />
+
+            <include
+                android:id="@+id/layout_base_list"
+                layout="@layout/layout_base_list" />
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,144 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "船名",
+    "valueHint": "请输入船名",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "申请人",
+    "valueHint": "请输入申请人",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "渔业船网工具指标批准书号",
+    "valueHint": "请输入渔业船网工具指标批准书号",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "双控功率(千瓦)",
+    "valueHint": "请输入双控功率",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "船长(米)",
+    "valueHint": "请输入船长",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "总吨位",
+    "valueHint": "请输入总吨位",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "船体材质",
+    "valueHint": "请选择船体材质",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "没关系",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "船舶造价(万元)",
+    "valueHint": "请输入船舶造价",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 16,
+    "valueName": "",
+    "keyName": "批准书有效期至",
+    "valueHint": "请选择批准书有效期",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "开工申报书申报单位",
+    "valueHint": "请输入开工申报书申报单位",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "备注信息",
+    "valueHint": "请输入备注信息",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

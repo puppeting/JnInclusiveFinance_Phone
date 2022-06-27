@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.adapter.ItemMainAdapter.MenuBean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_16"
+        >
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:id="@+id/imgLay"
+            app:rv_cornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                />
+        </com.flyco.roundview.RoundFrameLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{data.title}"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLay"
+            tools:text="个人授信" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

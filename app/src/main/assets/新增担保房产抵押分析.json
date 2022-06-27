@@ -1,0 +1,102 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入抵质押物名称",
+    "keyName": "抵质押物名称",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入共同所有人",
+    "keyName": "共同所有人",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入身份证号",
+    "keyName": "身份证号",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入房屋坐落",
+    "keyName": "房屋坐落",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入建筑面积",
+    "keyName": "建筑面积",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入预评估价格",
+    "keyName": "预评估价格(万元)",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入本次担保金额",
+    "keyName": "本次担保金额(万元)",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入抵押率",
+    "keyName": "抵押率(%)",
+    "requireable": false,
+    "editable": false,
+    "spanSize": 6
+  }
+]

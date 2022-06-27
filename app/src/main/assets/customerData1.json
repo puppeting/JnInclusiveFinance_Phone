@@ -1,0 +1,268 @@
+[
+  {
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "家庭信息111",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "家庭信息112",
+    "listBean": {
+      "actionTypes": "0,1,2,3,4",
+      "getUrl": "0,1,2,3,4",
+      "saveUrl": "0,1,2,3,4",
+      "deleteUrl": "0,1,2,3,4",
+      "list": [
+        {
+          "isCheck": false,
+          "id": "zhangsan",
+          "name": "zhangsan",
+          "age": 10,
+          "no": 1
+        },
+        {
+          "isCheck": false,
+          "id": "zhangsan",
+          "name": "zhangsan",
+          "age": 10,
+          "no": 2
+        },
+        {
+          "isCheck": false,
+          "id": "zhangsan",
+          "name": "zhangsan",
+          "age": 10,
+          "no": 3
+        },
+        {
+          "isCheck": false,
+          "id": "zhangsan",
+          "name": "zhangsan",
+          "age": 10,
+          "no": 4
+        },
+        {
+          "isCheck": false,
+          "id": "zhangsan",
+          "name": "zhangsan",
+          "age": 10,
+          "no": 5
+        }
+      ],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "3",
+          "value": "序号"
+        },
+        {
+          "key": "name",
+          "ems": "3",
+          "value": "姓名"
+        },
+        {
+          "key": "age",
+          "ems": "3",
+          "value": "年龄"
+        }
+      ]
+    },
+    "editable": true,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "家庭信息111",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 14,
+    "keyName": "",
+    "valueHint": "身份证正面",
+    "requireable": false,
+    "valueName": "",
+    "editable": false,
+    "spanSize": 1,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "2",
+    "picDeleteUrl": "2"
+  },
+  {
+    "layoutType": 14,
+    "keyName": "身份证正面",
+    "valueHint": "身份证正面",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 1,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "2",
+    "picDeleteUrl": "2"
+  },
+  {
+    "layoutType": 14,
+    "keyName": "",
+    "valueHint": "身份证正面",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 1,
+    "isGallery": false,
+    "picUrl": "",
+    "picBgUrl": "2",
+    "picDeleteUrl": "2"
+  },
+  {
+    "layoutType": 15,
+    "keyName": "",
+    "valueHint": "身份证正面",
+    "requireable": false,
+    "valueName": "",
+    "editable": false,
+    "spanSize": 1,
+    "isGallery": true,
+    "picUrl": "2,3,4,5,63,4,5,6",
+    "picBgUrl": "",
+    "picCount": 15,
+    "picDeleteUrl": "2"
+  },
+  {
+    "layoutType": 15,
+    "keyName": "户口本",
+    "valueHint": "身份证正面",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 1,
+    "isGallery": true,
+    "picUrl": "2,3,4",
+    "picCount": 15,
+    "picBgUrl": "",
+    "picDeleteUrl": "2"
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "姓名",
+    "keyName": "家庭信息",
+    "requireable": false,
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "valueHint": "身份号",
+    "keyName": "家庭信息",
+    "requireable": false,
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueHint": "地址",
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 10,
+    "keyName": "3",
+    "valueName": "家庭信息112",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "",
+    "valueHint": "家庭信息",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 11,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "editable": true,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 12,
+    "valueName": "随便点啥",
+    "keyName": "家庭信息",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "随便点啥",
+        "keyName": "家庭信息"
+      },
+      {
+        "valueName": "随便点",
+        "keyName": "家庭信息"
+      },
+      {
+        "valueName": "随便",
+        "keyName": "家庭信息"
+      },
+      {
+        "valueName": "随",
+        "keyName": "家庭信息"
+      }
+    ],
+    "isSingleChecked": false,
+    "editable": false,
+    "spanSize": 3
+  }
+]

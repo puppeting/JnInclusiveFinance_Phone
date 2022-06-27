@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/creditFaceFragment">
+<!--    android:label="人脸识别"-->
+    <fragment
+        android:id="@+id/creditFaceFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditFaceFragment"
+        tools:layout="@layout/fragment_credit_face">
+    </fragment>
+<!--    android:label="征信授权书"-->
+    <fragment
+        android:id="@+id/creditAuthorizationFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditAuthorizationFragment"
+        tools:layout="@layout/fragment_credit_face">
+    </fragment>
+
+
+</navigation>

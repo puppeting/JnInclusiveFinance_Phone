@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/LWHCFragment">
+<!--    android:label="客户信息"-->
+    <fragment
+        android:id="@+id/EmptyFragment"
+        android:name="com.inclusive.finance.jh.ui.EmptyFragment"
+        tools:layout="@layout/fragment_empty">
+
+    </fragment>
+
+    <activity
+        android:id="@+id/navigation_navActivity"
+        android:name="com.inclusive.finance.jh.ui.NavActivity"
+        tools:layout="@layout/activity_graph_nav" />
+
+    <fragment
+        android:id="@+id/CreditFaceFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditFaceFragment"
+        tools:layout="@layout/fragment_credit_face"/>
+    <!--联网核查-->
+    <fragment
+        android:id="@+id/LWHCFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.LWHCFragment"
+        tools:layout="@layout/fragment_credit_face"/>
+    <!--录音录像-->
+    <fragment
+        android:id="@+id/VodFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.VodFragment"
+        tools:layout="@layout/fragment_vod"/>
+    <!--借据上传-->
+    <fragment
+        android:id="@+id/JJSCFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.JJSCFragment"
+        tools:layout="@layout/fragment_jjsc"/>
+    <!--离柜放款验证单-->
+    <fragment
+        android:id="@+id/LGFKYZDFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.LGFKYZDFragment"
+        tools:layout="@layout/fragment_lxfkyzd"/>
+</navigation>

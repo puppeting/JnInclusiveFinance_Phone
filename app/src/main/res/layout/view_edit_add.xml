@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="recyclerView"
+            type="androidx.recyclerview.widget.RecyclerView" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <import type="android.view.View" />
+
+        <import type="com.blankj.utilcode.util.SizeUtils" />
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+    </data>
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_width="@{(recyclerView.width-SizeUtils.dp2px(150))/3}"
+        app:rv_backgroundColor="@{data.editable?@color/white:@color/app_bg}"
+        app:rv_cornerRadius="2dp"
+        app:rv_strokeColor="@{data.requireable?@color/colorTintRed:@color/line}"
+        app:rv_strokeWidth="1dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="@{data.valueHint}"
+            android:maxLength="@{data.ems}"
+            android:minLines="@{data.minLines}"
+            android:padding="8dp"
+            android:singleLine="@{data.isSingleLine}"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_12"
+            tools:text="TextV" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bt_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_key"
+            app:layout_constraintStart_toEndOf="@+id/tv_key"
+            app:layout_constraintTop_toTopOf="@+id/tv_key"
+            app:srcCompat="@drawable/ic_baseline_indeterminate_check_box_24" />
+    </com.flyco.roundview.RoundLinearLayout>
+</layout>

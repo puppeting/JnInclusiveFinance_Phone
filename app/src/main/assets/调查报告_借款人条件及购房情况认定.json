@@ -1,0 +1,162 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "借款人条件及购房情况认定",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 18,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "借款人条件及购房情况认定",
+    "editable": true,
+    "richTextList": [
+      {
+        "keyName": "单身声明",
+        "valueName": "<p>\n    江苏农村商业银行：\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;因本人向贵行申请金额为 ____①_____&nbsp; 万元（大写），期限___②_____&nbsp; 月的个人贷款。\n</p>\n<p>\n    现特对本人婚姻状况声明如下：&nbsp; &nbsp;&nbsp;\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人姓名：_______③__________性别：_____④______&nbsp; &nbsp;国藉：______⑤_____&nbsp; &nbsp; &nbsp; 身份证件名称：_____⑥_______&nbsp; &nbsp; &nbsp;证件编号：____⑦______&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n</p>\n<p>\n    户藉所在地：______⑧__________&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;现居住地：_______⑨_______&nbsp; &nbsp;&nbsp;\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人目前为单身，无配偶（包括未婚/离异/丧偶）。\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人在此郑重声明：以上填写内容完整、真实。无论借款批准与否，贵行有权保留上述申请文件，同时贵行有权采取适当方式调查资料的\n</p>\n<p>\n    真实程度。如因本人隐瞒真实婚姻状况而由此产生任何法律纠纷、争议、索赔和/或导致（或可能影响）本人履行相关贷款合同和/或担保合同\n</p>\n<p>\n    项下相关义务和责任的，本人承诺赔偿贵行因此产生的一切损失，并承担相应的法律责任，贵行亦有权打拒绝本人/被担保人的任何贷款申请或\n</p>\n<p>\n    提款要求。\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": false
+      }
+    ],
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "①住房贷款记录(笔)",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "②有无结清",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "③借款人已有住房(套)",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "④征信报告当前有无逾期欠款",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "⑤近24月内有无累计逾期3期以上",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑥5年内累计逾期(次)",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑦5年内最高连续逾期(次)",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑧违约记录原因",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 4
+  }
+]

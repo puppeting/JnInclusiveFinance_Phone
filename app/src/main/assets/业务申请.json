@@ -1,0 +1,319 @@
+[ {
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 10,
+  "keyName": "1",
+  "valueName": "原有额度分项",
+  "spanSize": 6
+},
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "原有额度分项列表",
+    "listBean": {
+      "actionTypes": "3",
+      "getUrl": "",
+      "saveUrl": "",
+      "deleteUrl": "",
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "12",
+          "value": "贷款品种"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "担保方式"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "起始日期"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "终止日期"
+        }
+      ]
+    },
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "变更额度分项",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "变更额度分项列表",
+    "listBean": {
+      "actionTypes": "0,2,1",
+      "getUrl": "",
+      "saveUrl": "",
+      "deleteUrl": "",
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "12",
+          "value": "贷款品种"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "担保方式"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "起始日期"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "终止日期"
+        }
+      ]
+    },
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "贷款品种",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "随便点啥",
+        "keyName": "家庭信息"
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "授信额度(万元)",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保方式",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 16,
+    "requireable": true,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "起始日期",
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 16,
+    "requireable": true,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "终止日期",
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "是否循环使用",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "是",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "申请类型",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "随便点啥",
+        "keyName": "家庭信息"
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "授信期限(月)",
+    "editable": true,
+    "requireable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "还款方式",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "随便点啥",
+        "keyName": "家庭信息"
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "是否阳光授信",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "是",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "是否归并临时授信",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "是",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "是否签署额度协议",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "是",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "否",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  }
+]

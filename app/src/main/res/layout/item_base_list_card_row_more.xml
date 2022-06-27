@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+            <variable
+                name="titleData"
+                type="String" />
+            <variable
+                name="data"
+                type="String" />
+        <import type="com.inclusive.finance.jh.utils.SZWUtils"/>
+        <import type="android.text.Html"/>
+    </data>
+
+    <FrameLayout
+        android:id="@+id/contentLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_mine_white_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bt_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                />
+        </FrameLayout>
+    </FrameLayout>
+</layout>

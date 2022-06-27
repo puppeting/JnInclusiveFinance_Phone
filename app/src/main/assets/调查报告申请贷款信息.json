@@ -1,0 +1,114 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "申请金额(元)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "期限(月)",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "利率",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "还款方式",
+    "valueHint": "",
+    "enums12": [
+      {
+        "valueName": "等额本金",
+        "keyName": ""
+      },
+      {
+        "valueName": "等额本息",
+        "keyName": ""
+      },
+      {
+        "valueName": "按月付息",
+        "keyName": ""
+      },
+      {
+        "valueName": "到期还本",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "担保方式",
+    "valueHint": "",
+    "enums12": [
+      {
+        "valueName": "信用",
+        "keyName": ""
+      },
+      {
+        "valueName": "保证",
+        "keyName": ""
+      },
+      {
+        "valueName": "抵押",
+        "keyName": ""
+      },
+      {
+        "valueName": "质押",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "贷款用途",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

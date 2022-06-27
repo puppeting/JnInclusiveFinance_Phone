@@ -1,0 +1,197 @@
+[
+  {
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "家庭信息111",
+    "editable": false,
+    "spanSize": 3
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "共同所有人",
+    "valueHint": "请输入共同所有人",
+    "requireable": true,
+    "editable": true,
+    "isSingleLine": true,
+    "inputType": 1,
+    "minLines": 1,
+    "ems": 15,
+    "spanSize": 2
+  },
+  {
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "状态",
+    "valueHint": "请选择状态",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "自用",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "原有额度分项列表",
+    "listBean": {
+      "equally": true,
+      "actionTypes": "0,1,2,3,4",
+      "getUrl": "",
+      "saveUrl": "",
+      "deleteUrl": "",
+      "list": [],
+      "titleList": [
+        {
+          "key": "",
+          "ems": "12",
+          "value": "贷款品种"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "授信额度(万元)"
+        }
+      ]
+    },
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 14,
+    "keyName": "身份证正面",
+    "valueHint": "身份证正面",
+    "requireable": true,
+    "valueName": "暂无",
+    "editable": true,
+    "spanSize": 3,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "暂无",
+    "picDeleteUrl": "暂无"
+  },
+  {
+    "layoutType": 15,
+    "keyName": "贷款用途证明材料",
+    "valueHint": "贷款用途证明材料",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "",
+    "picCount": 15,
+    "picDeleteUrl": "",
+    "picList": [
+      {
+        "id": "",
+        "picUrl": ""
+      }
+    ]
+  },
+  {
+    "layoutType": 16,
+    "valueName": "",
+    "keyName": "终止日期",
+    "valueHint": "请选择终止日期",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "layoutType": 17,
+    "requireable": true,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "",
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 18,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "授权书列表",
+    "requireable": true,
+    "editable": true,
+    "richTextList": [
+      {
+        "keyName": "名称",
+        "valueName": "富文本",
+        "checked": true
+      }
+    ],
+    "spanSize": 6
+  },
+  {
+    "layoutType": 19,
+    "keyName": "客户签字",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "layoutType": 20,
+    "keyName": "申请人人脸识别",
+    "valueHint": "BR,本人人脸识别",
+    "requireable": false,
+    "valueName": "",
+    "isGallery": false,
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "layoutType": 21,
+    "keyName": "申请人确定阅读",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "《征信授权书》",
+    "editable": true,
+    "checked": false,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "layoutType": 22,
+    "keyName": "配偶",
+    "valueName": "",
+    "spanSize": 3
+  },
+  {
+    "layoutType": 23,
+    "valueName": "3.5",
+    "keyName": "我行评价",
+    "editable": false,
+    "requireable": false,
+    "spanSize": 2
+  },
+  {
+    "layoutType": 24,
+    "keyName": "总资产",
+    "titleOnly": true,
+    "spanSize": 1
+  },
+  {
+    "layoutType": 25,
+    "valueName": "",
+    "keyName": "现金及银行存款",
+    "valueHint": "",
+    "requireable": false,
+    "editable": true,
+    "spanSize": 3
+  }
+]

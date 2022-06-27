@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View"/>
+            <variable
+                name="holder"
+                type="com.chad.library.adapter.base.viewholder.BaseViewHolder" />
+            <variable
+                name="data"
+                type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_marginTop="@{data.visibility? 15:0}"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_height="wrap_content">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minWidth="180dp"
+            android:layout_marginStart="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+<!--            app:rv_backgroundColor="@{Integer.valueOf(data.key)%2==0?@color/DarkOrange:@color/Red}"-->
+<!--            app:rv_cornerRadius="@dimen/margin_100"-->
+<!--            tools:rv_backgroundColor="@color/Red"-->
+            <com.flyco.roundview.RoundTextView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="@dimen/dp_1"
+                android:gravity="center"
+                android:textColor="@color/color_text_title"
+                android:text="@{data.key}"
+                android:visibility="@{Integer.valueOf(data.key)&lt;0?View.INVISIBLE:View.VISIBLE}"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                tools:text="1"
+                 />
+<!--            tools:textColor="@color/Red"-->
+<!--            android:textColor="@{Integer.valueOf(data.key)%2==0?@color/DarkOrange:@color/Red}"-->
+<!--            app:rv_backgroundColor="@color/white"-->
+<!--            app:rv_cornerRadius="@dimen/margin_100"-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:text="@{data.value}"
+                android:textColor="@color/color_text_title"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                tools:text="申请信息" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/promptInformation"
+                app:layout_constraintEnd_toStartOf="@+id/tv_value"
+                android:visibility="@{StringUtils.isEmpty(data.promptInformation)?View.GONE:View.VISIBLE}"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                app:tint="@color/MaterialBlue400"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_key"
+                app:layout_constraintTop_toTopOf="@+id/tv_key"
+                app:srcCompat="@drawable/ic_baseline_help_24" />
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

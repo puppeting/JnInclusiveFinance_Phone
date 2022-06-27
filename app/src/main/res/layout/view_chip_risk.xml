@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="String" />
+        <variable
+            name="check"
+            type="Boolean" />
+    </data>
+
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="基本信息"
+        android:text="@{data}"
+        android:checkable="true"
+        app:checkedIconVisible="false"
+        app:chipBackgroundColor="@color/selector_chip_white_gray"
+        app:chipCornerRadius="@dimen/dp_5"
+        app:chipStrokeColor="@color/line"
+        app:chipStrokeWidth="1dp"
+        tools:chipStrokeWidth="0dp"
+        tools:closeIconTint="@color/MaterialGrey500"
+        app:closeIcon="@drawable/ic_baseline_check_circle_16"
+        app:closeIconTint="@{check?@color/color_main_green:@color/MaterialGrey500}"
+        app:closeIconVisible="false" />
+</layout>

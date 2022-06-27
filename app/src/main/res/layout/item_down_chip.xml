@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean.Enum12" />
+    </data>
+
+    <CheckedTextView
+        android:layout_marginTop="@dimen/dp_1"
+        android:padding="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        tools:text="fdadffsda"
+        android:text="@{data.valueName}"
+        android:checkable="true"
+        android:checked="@{data.checked}"
+        tools:checked="true"
+        android:checkMark="@drawable/selector_pop_down_check"
+        android:background="#D2D2D3"
+        android:checkMarkTint="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+    </CheckedTextView>
+</layout>

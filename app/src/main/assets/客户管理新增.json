@@ -1,0 +1,84 @@
+[
+  {
+    "layoutType": 14,
+    "keyName": "身份证正面",
+    "valueHint": "身份证正面",
+    "requireable": true,
+    "valueName": "暂无",
+    "editable": true,
+    "spanSize": 3,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "",
+    "picDeleteUrl": "暂无"
+  },{
+    "layoutType": 14,
+    "keyName": "身份证反面",
+    "valueHint": "身份证反面",
+    "requireable": true,
+    "valueName": "暂无",
+    "editable": true,
+    "spanSize": 3,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "",
+    "picDeleteUrl": "暂无"
+  },
+  {
+    "layoutType": 11,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "请输入姓名",
+    "keyName": "姓名",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入身份证号",
+    "keyName": "身份证号",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入手机号",
+    "keyName": "手机号",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 11,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "请输入证件地址",
+    "keyName": "证件地址",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 16,
+    "requireable": true,
+    "valueName": "",
+    "valueHint": "开始于",
+    "keyName": "证件有效期",
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 17,
+    "requireable": true,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "",
+    "editable": true,
+    "spanSize": 6
+
+  }
+]

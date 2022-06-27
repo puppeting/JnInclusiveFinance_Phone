@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/guaranteePersonalFragment">
+<!--    android:label="客户信息"-->
+    <fragment
+        android:id="@+id/guaranteePersonalFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.guarantee.GuaranteePersonalFragment"
+        tools:layout="@layout/fragment_guarantee_personal">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity"
+            />
+    </fragment>
+
+    <activity
+        android:id="@+id/navigation_navActivity"
+        android:name="com.inclusive.finance.jh.ui.NavActivity"
+        tools:layout="@layout/activity_graph_nav" />
+
+    <fragment
+        android:id="@+id/guaranteeBetFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.guarantee.GuaranteeBetFragment"
+        tools:layout="@layout/fragment_guarantee_base">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/guaranteeOtherFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.guarantee.GuaranteeOtherFragment"
+        tools:layout="@layout/fragment_guarantee_other">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity"
+            />
+    </fragment>
+</navigation>

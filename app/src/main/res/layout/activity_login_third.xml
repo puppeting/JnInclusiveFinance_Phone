@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/header"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:background="#212121">
+
+
+            <ImageView
+                android:id="@+id/img_mid"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/app_logo"
+                android:transitionName="shareLogo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/img_bottom"-->
+            <!--android:layout_width="@dimen/margin_40"-->
+            <!--android:layout_height="@dimen/margin_20"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:src="@mipmap/icon_startpage_zaixian"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/img_mid" />-->
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/bt_login_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_45"
+                android:layout_marginStart="@dimen/margin_35"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="@dimen/margin_35"
+                android:gravity="center"
+                android:text="微信登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_mid"
+                app:rv_backgroundColor="#1FC729"
+                app:rv_cornerRadius="@dimen/margin_5">
+
+                <TextView
+                    android:text="微信登录"
+                    android:layout_marginEnd="@dimen/dp_10"
+                    android:drawablePadding="@dimen/dp_10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    android:drawableStart="@mipmap/icon_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</layout>

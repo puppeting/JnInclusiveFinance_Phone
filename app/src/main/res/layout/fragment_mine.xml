@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.MainActivityModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+         >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/layout_bg_list_top"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                android:alpha="0.3"
+                android:src="@mipmap/ic_mine_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/roundLinearLayout2"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_mine_white_back"
+                android:layout_height="0dp"
+                android:layout_marginTop="150dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:background="@drawable/bg_mine_white"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/bt_setting"
+                        android:onClick="@{(v)->presenterClick.onClick(v)}"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_45"
+                        android:layout_marginTop="160dp"
+                        android:background="@color/white"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:elevation="2.1dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_20"
+                        android:text="设置"
+                        android:textColor="@color/color_text_title"
+                        android:textSize="@dimen/sp_14"
+                        app:drawableEndCompat="@drawable/ic_baseline_navigate_next_24"
+                        app:drawableStartCompat="@drawable/ic_baseline_settings_24" />
+
+                    <TextView
+                        android:id="@+id/bt_askForLeave"
+                        android:onClick="@{(v)->presenterClick.onClick(v)}"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_45"
+                        android:background="@color/white"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:elevation="2dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_20"
+                        android:text="请假"
+                        android:textColor="@color/color_text_title"
+                        android:textSize="@dimen/sp_14"
+                        app:drawableEndCompat="@drawable/ic_baseline_navigate_next_24"
+                        app:drawableStartCompat="@drawable/ic_baseline_access_time_24" />
+
+                    <TextView
+                        android:id="@+id/bt_exit"
+                        android:onClick="@{(v)->presenterClick.onClick(v)}"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_45"
+                        android:background="@color/white"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:elevation="1dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/dp_20"
+                        android:paddingEnd="@dimen/dp_20"
+                        android:text="退出系统"
+                        android:textColor="@color/color_text_title"
+                        android:textSize="@dimen/sp_14"
+                        app:drawableEndCompat="@drawable/ic_baseline_navigate_next_24"
+                        app:drawableStartCompat="@drawable/ic_baseline_exit_to_app_24" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/Red"
+                android:translationY="-45dp"
+                app:cardCornerRadius="200dp"
+                app:cardElevation="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/roundLinearLayout2">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/ic_account_circle_black_50dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:text="昵称"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_22"
+                android:textStyle="bold"
+                android:translationY="-30dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialCardView2"
+                app:layout_constraintStart_toStartOf="@+id/materialCardView2"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView2" />
+
+            <TextView
+                android:id="@+id/unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职位"
+                android:textColor="@color/color_text_subTitle"
+                android:textSize="@dimen/sp_16"
+                android:translationY="-20dp"
+                app:layout_constraintEnd_toEndOf="@+id/materialCardView2"
+                app:layout_constraintStart_toStartOf="@+id/materialCardView2"
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_account"
+    app:startDestination="@id/navigation_center">
+    <fragment
+        android:id="@+id/navigation_center"
+        android:name="com.inclusive.finance.jh.ui.account.AccountCenterFragment"
+        tools:layout="@layout/fragment_account_center">
+        <action
+            android:id="@+id/action_to_gesture"
+            app:destination="@+id/navigation_gesture"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fade_out_long"
+            app:popExitAnim="@anim/slide_out_bottom"/>
+        <action
+            android:id="@+id/action_to_pwd"
+            app:destination="@+id/navigation_pwd"
+            app:enterAnim="@anim/slide_in_bottom"
+            app:exitAnim="@anim/fade_out_long"
+            app:popExitAnim="@anim/slide_out_bottom"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_gesture"
+        android:name="com.inclusive.finance.jh.ui.account.ModifyGesturePasswordFragment"
+        tools:layout="@layout/fragment_modify_gesture_password" />
+    <fragment
+        android:id="@+id/navigation_pwd"
+        android:name="com.inclusive.finance.jh.ui.account.ModifyPasswordFragment"
+        tools:layout="@layout/fragment_modify_password" />
+</navigation>

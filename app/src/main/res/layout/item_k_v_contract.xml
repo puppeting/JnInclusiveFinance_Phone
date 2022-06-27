@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+        <import type="com.blankj.utilcode.util.StringUtils"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTop="@{data.visibility? 15:0}"
+        android:layout_marginBottom="0dp"
+        android:paddingStart="@dimen/margin_25"
+        android:paddingEnd="@dimen/margin_25">
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@{data.absKey}"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/sp_14"
+            app:drawableStartCompat="@{data.requireable?@drawable/ic_baseline_lens_24:null}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="@{StringUtils.isEmpty(data.absKey())?View.INVISIBLE:View.VISIBLE}"
+            app:drawableTint="@{data.requireable?@color/Red:@color/white}"
+            tools:text="TextView" />
+
+        <com.flyco.roundview.RoundLinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_key"
+            app:layout_constraintTop_toBottomOf="@+id/tv_key"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="2dp"
+            app:rv_strokeColor="@color/line"
+            app:rv_strokeWidth="1dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="234dp"
+                android:layout_height="127dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                >
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/color_text_subTitle"
+                    android:text="已阅读并同意:"
+                    android:checked="@={data.checked}"/>
+                <TextView
+                    android:id="@+id/bt_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.valueHint}"
+                    android:layout_marginStart="@dimen/dp_24"
+                    android:textSize="@dimen/sp_12"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </com.flyco.roundview.RoundLinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="holder"
+            type="com.chad.library.adapter.base.viewholder.BaseViewHolder" />
+        <variable
+            name="recyclerView"
+            type="androidx.recyclerview.widget.RecyclerView" />
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+        <import type="com.blankj.utilcode.util.StringUtils"/>
+        <import type="android.view.View"/>
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTop="@{data.visibility? 15:0}"
+        android:layout_marginTop="@dimen/dp_15">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_gravity="@{data.layoutGravity}"
+            app:layout_width="@{data.width==-2?recyclerView.width/6*2:data.width}"
+            >
+            <TextView
+                android:id="@+id/tv_key"
+                app:layout_marginStart="@{data.titleOnly?15:25}"
+                tools:layout_marginStart="@dimen/margin_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:visibility="@{StringUtils.isEmpty(data.absKey())?View.GONE:View.VISIBLE}"
+                android:text="@{data.absKey}"
+                android:textColor="@color/color_text_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TextView"
+                android:drawablePadding="@dimen/dp_8"
+                app:drawableStartCompat="@{data.requireable?@drawable/ic_baseline_lens_24:null}"
+                app:drawableTint="@{data.requireable?@color/Red:@color/white}" />
+
+            <com.flyco.roundview.RoundTextView
+                android:id="@+id/tv_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_marginStart="@{StringUtils.isEmpty(data.absKey())?15:0}"
+                app:layout_marginEnd="@{StringUtils.isEmpty(data.absKey())?15:25}"
+                android:clickable="@{data.editable}"
+                android:hint="@{data.valueHint}"
+                android:maxEms="@{data.ems}"
+                android:minLines="@{data.minLines}"
+                android:padding="8dp"
+                android:singleLine="@{data.isSingleLine}"
+                android:text="@={data.valueName}"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_12"
+                android:visibility="@{data.titleOnly?View.GONE:View.VISIBLE}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_key"
+                app:layout_constraintTop_toBottomOf="@+id/tv_key"
+                app:rv_backgroundColor="@{data.editable?@color/white:@color/app_bg}"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@{data.requireable?@color/colorTintRed:@color/line}"
+                app:rv_strokeWidth="1dp"
+                tools:text="TextV" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

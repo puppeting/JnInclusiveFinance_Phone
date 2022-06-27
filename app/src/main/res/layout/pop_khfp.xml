@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="@dimen/dp_8"
+        >
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius="@dimen/dp_8">
+
+
+            <RelativeLayout
+                android:background="#F3F3F3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true">
+
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+                <TextView
+                    android:id="@+id/tv_my_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:text="移交"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_14" />
+
+                <!--                <View-->
+                <!--                    android:layout_width="2dp"-->
+                <!--                    android:layout_height="14dp"-->
+                <!--                    android:layout_marginStart="10dp"-->
+                <!--                    android:layout_marginTop="@dimen/dp_20"-->
+                <!--                    android:background="@color/colorPrimary" />-->
+            </RelativeLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/ll_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:animateLayoutChanges="true">
+
+                <LinearLayout
+                    android:padding="@dimen/dp_15"
+                    android:layout_width="@dimen/margin_300"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ghrLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="0dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/dp_8"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="管户人"
+                            android:textColor="@color/color_text_title"
+                            android:textSize="@dimen/sp_14"
+                            app:drawableStartCompat="@drawable/ic_baseline_lens_24"
+                            app:drawableTint="@color/Red"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                        <com.flyco.roundview.RoundLinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:rv_cornerRadius="2dp"
+                            app:rv_strokeColor="@color/line"
+                            app:rv_strokeWidth="1dp">
+
+                            <androidx.appcompat.widget.AppCompatCheckedTextView
+                                android:id="@+id/ghr"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableEnd="@drawable/selector_triangle"
+                                android:gravity="center_vertical"
+                                android:hint="请选择"
+                                android:paddingStart="8dp"
+                                android:paddingTop="5dp"
+                                android:paddingEnd="8dp"
+                                android:paddingBottom="5dp"
+                                android:singleLine="true"
+                                android:textColor="@color/color_text_title"
+                                android:textSize="@dimen/sp_12" />
+                        </com.flyco.roundview.RoundLinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_25" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/line"/>
+            <LinearLayout
+                android:id="@+id/bt_Lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_cancel"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_45"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/color_text_subTitle"
+                    android:textSize="18sp"
+                    app:rv_backgroundColor="@color/white" />
+                <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/line"/>
+                <com.flyco.roundview.RoundTextView
+                    android:id="@+id/tv_ok"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin_45"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    app:rv_backgroundColor="@color/white" />
+            </LinearLayout>
+        </com.flyco.roundview.RoundLinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
+
+
+

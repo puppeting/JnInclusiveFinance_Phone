@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+
+        <import type="android.view.View" />
+
+        <import type="com.blankj.utilcode.util.ScreenUtils" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/action_bar_custom"
+            layout="@layout/action_bar_custom" />
+
+        <ImageView
+            android:id="@+id/imageView47"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg_vod_h"
+            app:layout_constraintBottom_toTopOf="@+id/mPreviewView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar_custom" />
+
+
+        <androidx.camera.view.PreviewView
+            android:id="@+id/mPreviewView"
+            android:layout_width="match_parent"
+            android:layout_height="1140px"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_height="@{ScreenUtils.getScreenWidth()/3*4}" />
+
+        <TextView
+            android:id="@+id/videoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/mPreviewView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView47" />
+
+        <ImageView
+            android:id="@+id/record"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_marginBottom="@dimen/margin_25"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:src="@mipmap/ic_record"
+            app:layout_constraintBottom_toBottomOf="@+id/mPreviewView"
+            app:layout_constraintEnd_toEndOf="@+id/mPreviewView"
+            app:layout_constraintStart_toStartOf="@+id/mPreviewView" />
+
+        <ImageView
+            android:id="@+id/record_change"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:src="@mipmap/ic_record_change"
+            app:layout_constraintBottom_toBottomOf="@+id/record"
+            app:layout_constraintEnd_toEndOf="@+id/mPreviewView"
+            app:layout_constraintStart_toEndOf="@+id/record"
+            app:layout_constraintTop_toTopOf="@+id/record" />
+
+        <ImageView
+            android:id="@+id/record_select"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:src="@mipmap/ic_record_change"
+            app:layout_constraintBottom_toBottomOf="@+id/record"
+            app:layout_constraintEnd_toStartOf="@+id/record"
+            app:layout_constraintStart_toEndOf="@+id/record"
+            app:layout_constraintStart_toStartOf="@+id/mPreviewView"
+            app:layout_constraintTop_toTopOf="@+id/record" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

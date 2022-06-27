@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+        <variable
+            name="viewModel"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+        <import type="com.blankj.utilcode.util.StringUtils"/>
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_marginTop="@{data.visibility? 15:0}"
+        android:layout_marginBottom="0dp">
+
+        <TextView
+            android:id="@+id/tv_key"
+            app:layout_marginStart="@{data.titleOnly?15:25}"
+            tools:layout_marginStart="@dimen/margin_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:visibility="@{StringUtils.isEmpty(data.absKey())?View.GONE:View.VISIBLE}"
+            android:text="@{data.absKey}"
+            android:textColor="@color/color_text_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TextView"
+            android:drawablePadding="@dimen/dp_8"
+            app:drawableStartCompat="@{data.requireable?@drawable/ic_baseline_lens_24:null}"
+            app:drawableTint="@{data.requireable?@color/Red:@color/white}" />
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:id="@+id/valueLay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="@{data.titleOnly?View.GONE:View.VISIBLE}"
+            app:layout_constraintEnd_toStartOf="@id/map"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_key"
+            app:layout_constraintTop_toBottomOf="@+id/tv_key"
+            app:layout_marginEnd="@{StringUtils.isEmpty(data.absKey())?15:25}"
+            app:layout_marginStart="@{StringUtils.isEmpty(data.absKey())?15:0}"
+            app:rv_backgroundColor="@{data.editable?@color/white:@color/app_bg}"
+            app:rv_cornerRadius="2dp"
+            app:rv_strokeColor="@{data.requireable?@color/colorTintRed:@color/line}"
+            app:rv_strokeWidth="1dp"
+            tools:text="TextV" >
+            <EditText
+                android:id="@+id/tv_value"
+                android:background="@null"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@{data.valueHint}"
+                android:maxLength="@{data.ems}"
+                android:minLines="@{data.minLines}"
+                android:padding="8dp"
+                android:singleLine="@{data.isSingleLine}"
+                android:text="@={data.locationValueName}"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_12"
+                tools:text="TextV" />
+        </com.flyco.roundview.RoundLinearLayout>
+
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:padding="@dimen/dp_5"
+            android:src="@mipmap/icon_location"
+            app:layout_constraintBottom_toBottomOf="@+id/valueLay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/valueLay"
+            app:tint="@{viewModel.seeOnly!=true?@color/color_btn_blue:@color/color_main_grey}" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

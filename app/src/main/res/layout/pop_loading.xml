@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="95dp"
+        android:layout_height="65dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/image"
+            android:scaleType="centerCrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ProgressBar
+            android:id="@+id/progressBarCircular"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="@color/color_main_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/NumberProgressBar_Beauty_Red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:progress_max="100"
+            app:progress_reached_color="@color/colorPrimary"
+            app:progress_text_color="@color/colorPrimary"
+            android:layout_marginStart="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_20"/>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="压缩中..."
+            android:textColor="@color/colorPrimary"
+            android:textSize="7sp" />
+    </androidx.cardview.widget.CardView>
+</layout>

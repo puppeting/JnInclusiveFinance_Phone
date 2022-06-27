@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.KVBean" />
+        <variable
+            name="parentData"
+            type="com.inclusive.finance.jh.bean.ListBean" />
+    </data>
+
+    <com.flyco.roundview.RoundFrameLayout
+        android:padding="@dimen/dp_8"
+        app:rv_cornerRadius="@dimen/dp_5"
+        android:layout_width="78dp"
+        app:rv_isRippleEnable="false"
+        android:layout_height="58dp">
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+    </com.flyco.roundview.RoundFrameLayout>
+</layout>

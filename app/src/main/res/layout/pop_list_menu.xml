@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:background="@color/transparent"
+            android:elevation="2dp"
+            android:translationY="32dp"
+            app:srcCompat="@drawable/ic_arrow_drop_down_24"
+            tools:rotation="90" />
+
+        <com.flyco.roundview.RoundFrameLayout
+            android:minWidth="@dimen/margin_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:padding="@dimen/margin_5"
+            android:text="带箭头的Popup"
+            app:rv_backgroundColor="#4c4c4c"
+            app:rv_cornerRadius_BL="@dimen/dp_8"
+            app:rv_cornerRadius_BR="@dimen/dp_8"
+            app:rv_cornerRadius_TL="@dimen/dp_8"
+            app:rv_cornerRadius_TR="@dimen/dp_8"
+            app:rv_isRippleEnable="false">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_gravity="center"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.flyco.roundview.RoundFrameLayout>
+    </FrameLayout>
+</layout>

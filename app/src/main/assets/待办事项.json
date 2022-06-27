@@ -1,0 +1,70 @@
+[
+  {
+    "model":"",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "基本信息",
+    "spanSize": 3,
+    "listBean": {
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "3",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "4",
+          "value": "客户姓名"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "身份证号"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "申请授信(万)"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "流程状态"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "当前环节"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "当前处理人"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "下一环节"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "授信经理"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "受理日期"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "同步状态"
+        }
+      ]
+
+    }
+  }
+]

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+        <variable
+            name="editable"
+            type="Boolean" />
+        <variable
+            name="recyclerView"
+            type="androidx.recyclerview.widget.RecyclerView" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <import type="android.view.View" />
+        <import type="com.inclusive.finance.jh.utils.SZWUtils" />
+        <variable
+            name="holder"
+            type="com.chad.library.adapter.base.viewholder.BaseViewHolder" />
+
+        <variable
+            name="data"
+            type="java.util.ArrayList&lt;com.google.gson.JsonObject&gt;" />
+        <variable
+            name="json"
+            type="com.google.gson.JsonObject" />
+
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_8">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_8"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@{editable?@color/color_text_title:@color/color_not_editable}"
+                android:textSize="@dimen/sp_14"
+                android:text='@{SZWUtils.INSTANCE.getJsonObjectString(json,"productName")}'
+                app:drawableStartCompat="@null"
+                app:drawableTint="@color/Red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="产品名称" />
+
+            <com.flyco.roundview.RoundLinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_key"
+                app:layout_constraintTop_toBottomOf="@+id/tv_key"
+                app:rv_backgroundColor="@{editable?@color/white:@color/app_bg}"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+
+                app:rv_strokeWidth="1dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/tv_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableEnd="@drawable/selector_triangle"
+                    android:gravity="center_vertical"
+                    android:clickable="@{editable}"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="TextV" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="1"
+            android:paddingStart="@dimen/margin_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_key1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textColor="@{editable?@color/color_text_title:@color/color_not_editable}"
+                android:textSize="@dimen/sp_14"
+                android:text='@{SZWUtils.INSTANCE.getJsonObjectString(json,"priceName")}'
+                app:drawableStartCompat="@null"
+                app:drawableTint="@color/Red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="分配金额（万）"  />
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:id="@+id/valueLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_key1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_key1"
+                app:rv_backgroundColor="@{editable?@color/white:@color/app_bg}"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+                app:rv_strokeWidth="1dp"
+                tools:text="TextV" >
+
+                <EditText
+                    android:id="@+id/tv_value1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:inputType="numberDecimal"
+                    android:padding="8dp"
+                    android:textColor="@color/color_text_title"
+                    android:tag="@{holder.adapterPosition}"
+                    android:textSize="@dimen/sp_12"
+                    app:productAllocationText="@={json}"
+                    app:putJsonData="@{data}"
+                    tools:text="TextV" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bt_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:visibility="@{editable?holder.adapterPosition==0?View.INVISIBLE:View.VISIBLE:View.INVISIBLE}"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_key"
+            app:layout_constraintStart_toEndOf="@+id/tv_key"
+            app:layout_constraintTop_toTopOf="@+id/tv_key"
+            app:srcCompat="@drawable/ic_baseline_indeterminate_check_box_24" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</layout>

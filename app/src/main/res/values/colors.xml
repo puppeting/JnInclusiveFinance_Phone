@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4339</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#e62b25</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color_main_blue">#2196F3</color>
+    <color name="color_main_cyan">#30c4d3</color>
+    <color name="color_main_red">#e62b25</color>
+    <color name="color_main_grey">#FF727272</color>
+    <color name="color_main_green">#18dc7e</color>
+    <color name="color_main_TeaGreen">#94bd6f</color>
+    <color name="color_main_orange_1">#FFA14C</color>
+    <color name="color_main_orange">#ff5d0f</color>
+    <color name="color_main_orangeAlpha">#fbdac6</color>
+    <color name="color_main_redAlpha">#7CEC3631</color>
+    <color name="color_btn_red">#e62b25</color>
+    <color name="color_btn_blue">#1A73E9</color>
+    <color name="color_btn_red_alpha">#7fe62b25</color>
+    <color name="app_bg">#f7f8fa</color>
+    <color name="line">#e1e1e1</color>
+    <color name="line2">#66E1E1E1</color>
+    <color name="color_not_editable">#A1A1A1</color>
+    <color name="color_toolBar_title">#ff333333</color>
+    <color name="black_a7000000">#a7000000</color>
+    <color name="black_50000000">#50000000</color>
+    <color name="black_30000000">#30000000</color>
+    <color name="color_text_title">#333333</color>
+    <color name="color_text_subTitle">@color/MaterialGrey700</color>
+    <color name="color_text_hint">#FFCCCCCC</color>
+
+
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+    <color name="colorTintRed">#FF4C58</color>
+    <color name="colorAlphaRed">#44FF4C58</color>
+    <color name="default_bg">#aa000000</color>
+    <!--special color-->
+    <color name="black_a10_color">#1a000000</color>
+
+<string-array name="chartColors">
+    <item>#FDA7A7</item>
+    <item>#AC89FF</item>
+    <item>#FDDC61</item>
+    <item>#00FFCC</item>
+    <item>#FF33DD</item>
+    <item>#90FF84</item>
+    <item>#1976D2</item>
+    <item>#4DFFEA</item>
+    <item>#388E3C</item>
+</string-array>
+    <!--special color-->
+</resources>

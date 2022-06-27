@@ -1,0 +1,132 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "授权与声明",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 18,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "征信授权书列表",
+    "requireable": true,
+    "editable": true,
+    "richTextList": [
+      {
+        "keyName": "征信授权书",
+        "valueName": "<h2><strong>一、概述</strong></h2>\n\n<p><span style=\"font-size:14px\">这里展示的CKEditor编辑器为4.12.1版本，官方地址为：<a href=\"https://ckeditor.com/\" target=\"_blank\">https://ckeditor.com/</a>&nbsp;</span></p>\n\n<p><span style=\"font-size:14px\">可在其官网上下载需要的版本，还可在线定制代码高亮插件！</span></p>\n\n<p><span style=\"font-size:14px\">关于代码高亮插件的在线定制教程可参考本站教程：<a href=\"https://www.jb51.net/article/163075.htm\" target=\"_blank\">https://www.jb51.net/article/163075.htm</a>&nbsp;文章中还附带有&nbsp;</span><a href=\"https://highlightjs.org/\" target=\"_blank\">highlight.js</a><span style=\"font-size:14px\">&nbsp;以及&nbsp;<span style=\"color:#2980b9\"><a href=\"http://alexgorbatchev.com/SyntaxHighlighter/\" target=\"_blank\">SyntaxHighlighter</a> </span>代码高亮插件的下载地址，这里推荐使用&nbsp;</span><strong><span style=\"color:#e74c3c\">highlight.js&nbsp;</span>（下方编辑器说明部分有该插件本站下载地址）</strong></p>\n\n<h2><strong>二、效果展示</strong></h2>\n\n<p>1. 首先来看看代码高亮的显示效果，这里还是以 CKEditor4.12.1 引入文件代码为例，其js代码如下：</p>\n\n<pre>\n<code class=\"language-javascript\">&lt;script src=\"./ckeditor/ckeditor.js\"&gt;&lt;/script&gt;\n&lt;textarea name=\"editor1\" id=\"editor1\" cols=\"30\" rows=\"10\"&gt;&lt;/textarea&gt;\n&lt;script&gt;\n    // 这样就可以使用啦\n    CKEDITOR.replace('editor1',{\n        customConfig : './myconfig.js',  //加载配置js\n        removeButtons:'',\n        extraPlugins: 'codesnippet',\n        codeSnippet_theme: 'zenburn'\n    });\n&lt;/script&gt;</code></pre>\n\n<p>点击编辑器上的图标<img src=\"/images/codesnippet.png\" />，在输入上述代码，即可完成如上所示的代码高亮效果。代码输入框如下图所示：</p>\n\n<p><img src=\"/images/codesnippet_input.png\" /></p>\n\n<p>2. <code>&lt;code&gt;&lt;/code&gt;</code>代码效果插件图标为<img src=\"/images/code_tags.png\" />，用法和文字加粗<strong>&lt;b&gt;</strong>标签一样。感兴趣的同学可以试一下看看效果如何~</p>\n",
+        "checked": true
+      },
+      {
+        "keyName": "配偶征信授权书",
+        "valueName": "<h2><strong>一、概述</strong></h2>\n\n<p><span style=\"font-size:14px\">这里展示的CKEditor编辑器为4.12.1版本，官方地址为：<a href=\"https://ckeditor.com/\" target=\"_blank\">https://ckeditor.com/</a>&nbsp;</span></p>\n\n<p><span style=\"font-size:14px\">可在其官网上下载需要的版本，还可在线定制代码高亮插件！</span></p>\n",
+        "checked": false
+      }
+    ],
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "授权人信息",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 19,
+    "keyName": "客户签字",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 19,
+    "keyName": "配偶签字",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 20,
+    "keyName": "申请人人脸识别",
+    "valueHint": "BR,本人人脸识别",
+    "requireable": false,
+    "valueName": "",
+    "isGallery": false,
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 20,
+    "keyName": "配偶人脸识别",
+    "valueHint": "BR,配偶人脸识别",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 21,
+    "keyName": "申请人确定阅读",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "《征信授权书》",
+    "editable": true,
+    "checked": false,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 21,
+    "keyName": "配偶确定阅读",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "《征信授权书》《征信授权书》《征信授权书》",
+    "editable": true,
+    "checked": false,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  }
+]

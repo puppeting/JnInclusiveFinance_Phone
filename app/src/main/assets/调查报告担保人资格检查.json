@@ -1,0 +1,135 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "生意权属/身份证明(多选)",
+    "valueHint": "",
+    "enums12": [
+      {
+        "valueName": "营业执照",
+        "keyName": ""
+      },
+      {
+        "valueName": "租领合同",
+        "keyName": ""
+      },
+      {
+        "valueName": "生意往来单",
+        "keyName": ""
+      },
+      {
+        "valueName": "工作证",
+        "keyName": ""
+      },
+      {
+        "valueName": "工作证明",
+        "keyName": ""
+      },
+      {
+        "valueName": "其他",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": false,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "保证能力(多选)",
+    "valueHint": "",
+    "enums12": [
+      {
+        "valueName": "工资卡流水",
+        "keyName": ""
+      },
+      {
+        "valueName": "收入证明",
+        "keyName": ""
+      },
+      {
+        "valueName": "年可支计算",
+        "keyName": ""
+      }
+    ],
+    "requireable": false,
+    "isSingleChecked": false,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 36,
+    "valueName": "否",
+    "keyName": "是否产品分配",
+    "valueHint": "",
+    "enums12": [
+      {
+        "valueName": "是",
+        "keyName": "1"
+      },
+      {
+        "valueName": "否",
+        "keyName": "2"
+      }
+    ],
+    "listBean": {
+      "list": [{
+        "productName": "",
+        "productValue": "",
+        "enums12": [
+          {
+            "valueName": "是",
+            "keyName": "1"
+          },
+          {
+            "valueName": "否",
+            "keyName": "2"
+          }
+        ],
+        "priceName": "",
+        "priceValue": ""
+      }]
+    },
+    "requireable": false,
+    "isSingleChecked": false,
+    "editable": true,
+    "spanSize": 4
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "营业额检验",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "房产购买价格和时间",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

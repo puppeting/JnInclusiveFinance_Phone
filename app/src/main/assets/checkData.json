@@ -1,0 +1,38 @@
+{
+    "khxxCheck": true,
+    "zrxxCheck": false,
+    "ywsqCheck": false,
+    "xcdcCheck": false,
+    "dbxxCheck": false,
+    "dcbgCheck": true,
+    "zxsqCheck": false,
+    "dcbgSecondLevelBean": {
+      "jbxxCheck": false,
+      "xdlsCheck": true,
+      "sqdkxxCheck": false,
+      "gtjkrhdbrdxxCheck": false,
+      "dbrzgjcCheck": false,
+      "dsfpjCheck": false,
+      "dkzgscCheck": false,
+      "sqrcwbbCheck": false,
+      "fxfxdcjlCheck": false
+    },
+    "dbxxSecondLevelBean": {
+      "zrrdbfxCheck": false,
+      "fcdyfxCheck": true,
+      "gsdbfxCheck": false,
+      "qydbfxCheck": false,
+      "cldyfxCheck": false,
+      "cdzyfxCheck": false
+    },
+    "zrxxSecondLevelBean": {
+      "zxcxCheck": false,
+      "hfwcxCheck": true,
+      "whsjCheck": false
+    },
+    "xcdcSecondLevelBean": {
+      "yxzlCheck": false,
+      "sqsCheck": true
+    }
+
+  }

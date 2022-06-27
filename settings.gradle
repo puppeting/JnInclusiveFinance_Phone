@@ -1,0 +1,8 @@
+rootProject.name='GnInclusiveFinance_Phone'
+include ':app'
+include ':text'
+//setBinding(new Binding([gradle: this]))                                // new
+//evaluate(new File(                                                     // new
+//        settingsDir.parentFile,                                              // new
+//        'GnInclusiveFinance_Phone/flutter_native_contact/.android/include_flutter.groovy'                         // new
+//))                                                                  // new

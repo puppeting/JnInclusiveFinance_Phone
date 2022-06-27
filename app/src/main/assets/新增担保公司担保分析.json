@@ -1,0 +1,54 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保公司名称",
+    "valueHint": "请输入担保公司名称",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "本次担保金额(万)",
+    "valueHint": "请输入本次担保金额",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "反担保措施",
+    "valueHint": "请输入反担保措施",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "minLines": 3,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "描述",
+    "valueHint": "请输入描述",
+    "requireable": false,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

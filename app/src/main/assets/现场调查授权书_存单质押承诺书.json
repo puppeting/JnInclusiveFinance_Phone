@@ -1,0 +1,163 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "授权与声明",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 18,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "",
+    "keyName": "授权书列表",
+    "requireable": true,
+    "editable": true,
+    "richTextList": [
+      {
+        "keyName": "单身声明",
+        "valueName": "<p>\n    江苏农村商业银行：\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;因本人向贵行申请金额为 ____①_____&nbsp; 万元（大写），期限___②_____&nbsp; 月的个人贷款。\n</p>\n<p>\n    现特对本人婚姻状况声明如下：&nbsp; &nbsp;&nbsp;\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人姓名：_______③__________性别：_____④______&nbsp; &nbsp;国藉：______⑤_____&nbsp; &nbsp; &nbsp; 身份证件名称：_____⑥_______&nbsp; &nbsp; &nbsp;证件编号：____⑦______&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n</p>\n<p>\n    户藉所在地：______⑧__________&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;现居住地：_______⑨_______&nbsp; &nbsp;&nbsp;\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人目前为单身，无配偶（包括未婚/离异/丧偶）。\n</p>\n<p>\n    &nbsp; &nbsp; &nbsp; &nbsp;本人在此郑重声明：以上填写内容完整、真实。无论借款批准与否，贵行有权保留上述申请文件，同时贵行有权采取适当方式调查资料的\n</p>\n<p>\n    真实程度。如因本人隐瞒真实婚姻状况而由此产生任何法律纠纷、争议、索赔和/或导致（或可能影响）本人履行相关贷款合同和/或担保合同\n</p>\n<p>\n    项下相关义务和责任的，本人承诺赔偿贵行因此产生的一切损失，并承担相应的法律责任，贵行亦有权打拒绝本人/被担保人的任何贷款申请或\n</p>\n<p>\n    提款要求。\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": false
+      },
+      {
+        "keyName": "消费贷款用途承诺书",
+        "valueName": "<p>\n    <span style=\";font-family:宋体;font-size:20px\"><span style=\"font-family:宋体\">江苏农村商业银行：</span></span>\n</p>\n<p style=\"text-indent:37px\">\n    <span style=\";font-family:宋体;font-size:19px\"><span style=\"font-family:宋体\">本人姓名</span></span><span style=\"text-decoration:underline;\"><span style=\"font-family: 宋体;font-size: 19px\">&nbsp; &nbsp; ①</span></span><span style=\"text-decoration:underline;\"><span style=\"font-family: 宋体;color: rgb(255, 0, 0);font-size: 19px\">&nbsp;</span></span><span style=\"text-decoration:underline;\"><span style=\"font-family: 宋体;font-size: 19px\">&nbsp;&nbsp;</span></span><span style=\";font-family:宋体;font-size:19px\"><span style=\"font-family:宋体\">，身份证号：</span></span><span style=\"text-decoration:underline;\"><span style=\"font-family: 宋体;font-size: 19px\">&nbsp;</span></span><span style=\"text-decoration:underline;\"><span style=\"font-family: 宋体;font-size: 19px\">&nbsp; ②&nbsp; &nbsp;&nbsp;</span></span><span style=\";font-family:宋体;font-size:19px\"><span style=\"font-family:宋体\">，在贵行申请办理消费贷款业务，贷款将用于合法、合规用途。为切实保障贵行权益，本人就贷款用途及贷款资金使用承诺如下：</span></span>\n</p>\n<p style=\"text-indent:37px\">\n    <span style=\";font-family:宋体;font-size:19px\"><span style=\"font-family:宋体\">本人保证按申请用途合法、合规使用贷款，保证该贷款不用于购房、投资等非消费领域。</span></span>\n</p>\n<p style=\"text-indent:37px\">\n    <span style=\";font-family:宋体;font-size:19px\"><span style=\"font-family:宋体\">本人保证遵守以上承诺，如本人违反以上承诺，贵行可随时宣布贷款提前到期、冻结未使用额度和收回贷款等措施。</span></span>\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": false
+      },
+      {
+        "keyName": "个人房产抵押证明",
+        "valueName": "<p>\n    <span style=\"font-size: 18px;\"><span style=\"font-family: 楷体_GB2312;\"></span><span style=\"font-family: 楷体_GB2312; font-size: 18px; text-decoration-line: underline;\">&nbsp; &nbsp; &nbsp; ①&nbsp; &nbsp; &nbsp;</span><span style=\"font-family: 楷体_GB2312;\"><span style=\"font-family: 楷体_GB2312;\">（身份证号：</span></span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; ②</span><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">）、</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; ③&nbsp; &nbsp; &nbsp;&nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">（身份证号：</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp;④</span><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">）同意用其位于</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; ⑤</span><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">（编号：</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;⑥</span><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">，建筑面积</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp;⑦&nbsp; &nbsp;</span><span style=\"font-family: 楷体_GB2312;\">&nbsp;&nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">平米）作为抵押物，为</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp; &nbsp; ⑧&nbsp;&nbsp;</span><span style=\"font-family: 楷体_GB2312;\">&nbsp; &nbsp;</span></span><span style=\"font-family: 楷体_GB2312;\">向江苏农村商业银行股份有限公司申请贷款提供抵押担保，并声明此房产的产权无争议，在他行无抵押。</span></span>\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": false
+      },
+      {
+        "keyName": "抵押物未租赁承诺书",
+        "valueName": "<p>\n    <span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">江苏农村商业银行:</span>\n</p>\n<p style=\"text-indent: 42px;line-height: 37px\">\n    <span style=\"font-size: 16px;\"><span style=\"font-family: 仿宋_GB2312; font-size: 19px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">本人（公司）以名下所有的</span><span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">/与他人共有的</span>，位于</span><span style=\"font-size: 16px; text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp; ①&nbsp; &nbsp; &nbsp; &nbsp;</span></span><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">的房屋，房产证号：</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp; &nbsp; &nbsp; &nbsp; ②&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">，为</span><span style=\"font-size: 16px; text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp;&nbsp;</span></span></span>\n</p>\n<p style=\"text-indent: 42px;line-height: 37px\">\n    <span style=\"font-size: 16px;\"><span style=\"font-size: 16px; text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp; &nbsp; &nbsp;③&nbsp; &nbsp;&nbsp;</span></span><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">（借款人）于</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312; font-size: 19px;\">&nbsp; &nbsp; ④&nbsp; &nbsp; </span></span><span style=\"font-family: 仿宋_GB2312;\">（年/月/日）向江苏农村商业银行（贷款人）申请贷款提供抵押担保，现本人（公司）郑重承诺如下：</span>\n</p>\n<p style=\"text-indent:42px;line-height:37px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">一、截至抵押权确立之日，上述房产未出租他人使用。</span>\n</p>\n<p style=\"text-indent:42px;line-height:37px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">二、从抵押权确立之日起，如上述房产租赁他人使用，须提前征得贵行同意，并且将已抵押之事实告知承租人。</span>\n</p>\n<p style=\"text-indent:42px;line-height:37px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">本人（公司）对上述承诺内容予以认同，如违反上述承诺，给贷款人造成损失的，本人（公司）自愿承担相应的民事赔偿责任。</span>\n</p>\n<p>\n    <span style=\"font-family: 仿宋_GB2312; font-size: 16px;\">此承诺不可以任何理由撤销。</span>\n</p>",
+        "checked": false
+      },
+      {
+        "keyName": "渔船抵押承诺书",
+        "valueName": "<p style=\"line-height:32px\">\n    <span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 16px;\">江苏农村商业银行股份有限公司：</span>\n</p>\n<p style=\"text-indent:42px;line-height:32px\">\n    <span style=\"font-size: 16px;\"><span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">本人自愿以自有渔船一艘作为抵押物为本人向贵行申请渔船抵押贷款</span></span><span style=\"font-family: 仿宋_GB2312; font-size: 21px; text-indent: 42px;\"></span><span style=\"font-family: 仿宋_GB2312; font-size: 21px; text-indent: 42px;\">___①___</span><span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">万元作抵押担保，期限</span>__②</span><span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 21px;\">__<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">年，具体情况如下：</span></span></span>\n</p>\n<p style=\"text-indent:42px;line-height:29px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">船名：</span>___③___<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">；</span></span>\n</p>\n<p style=\"text-indent:37px;line-height:29px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">渔业船舶所有权登记证明：</span>__④__<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">；</span></span>\n</p>\n<p style=\"text-indent:37px;line-height:29px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">渔业船舶国籍证编号：</span>__⑤___<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">；</span></span>\n</p>\n<p style=\"text-indent:37px;line-height:29px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">海洋渔业捕捞许可证编号：</span>___⑥__<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">；</span></span>\n</p>\n<p style=\"text-indent:37px;line-height:29px\">\n    <span style=\"font-family: 仿宋_GB2312; font-size: 21px;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">渔业船舶检验证书编号：</span>___⑦___<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">。</span></span>\n</p>\n<p style=\"text-indent:37px;line-height:29px\">\n    <span style=\"font-size: 21px; font-family: 仿宋_GB2312;\"><span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">渔船互助保险凭证：</span>__⑧___<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">，船舶保险价值</span>_</span><span style=\"font-size: 21px; font-family: 仿宋_GB2312;\">_⑨ _<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">万元，互助保险金额</span>_</span><span style=\"font-size: 21px; font-family: 仿宋_GB2312;\">_⑩__<span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">万元。</span></span>\n</p>\n<p style=\"text-indent:42px;line-height:32px\">\n    <span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 16px;\">本人承诺如下：</span>\n</p>\n<p style=\"text-indent:43px;line-height:32px\">\n    <span style=\"font-family: 仿宋_GB2312; color: rgb(51, 51, 51); font-size: 16px;\">如贷款本息不能按时偿还，本人承诺用以上抵押物变现予以偿还。</span>\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": false
+      },
+      {
+        "keyName": "存单质押承诺书",
+        "valueName": "<p>\n    <span style=\"font-size: 16px;\"><span style=\"font-family: 仿宋_GB2312;\"><span style=\"font-family: 仿宋_GB2312;\">江苏农村商业银行：</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; ①&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp;</span></span><span style=\"font-family: 仿宋_GB2312;\">（身份证号码：</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;②&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span><span style=\"font-family: 仿宋_GB2312;\">）同意以其在江苏农村商业银行</span><span style=\"font-family: 仿宋_GB2312;\">的定期存单</span><span style=\"text-decoration: underline;\"><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; ③</span><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></span></span>\n</p>\n<p>\n    <span style=\"font-size: 16px; font-family: 仿宋_GB2312;\">（账号：</span><span style=\"font-family: 仿宋_GB2312; font-size: 16px; text-decoration: underline;\">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;④&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</span><span style=\"font-size: 16px;\"><span style=\"font-family: 仿宋_GB2312;\">）为</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; ⑤&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">（身份证号码：</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;⑥&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\"><span style=\"font-family: 仿宋_GB2312;\">）向农村商业银行小微金融事业部</span> </span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp;⑦&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">提供质押担保。如果</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; ⑤&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">贷款到期不能归还，以本人质押的定期存单</span><span style=\"text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; ③&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">（账号：&nbsp;</span></span><span style=\"font-size: 16px; text-decoration: underline; font-family: 仿宋_GB2312;\">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312; text-decoration-line: underline;\">④</span><span style=\"text-decoration-line: underline; font-family: 仿宋_GB2312;\">&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">）偿还</span><span style=\"text-decoration-line: underline;\"><span style=\"font-family: 仿宋_GB2312;\">&nbsp; &nbsp; ⑤&nbsp; &nbsp;</span><span style=\"font-family: 仿宋_GB2312;\">&nbsp;</span></span><span style=\"font-family: 仿宋_GB2312;\">的贷款本金及利息。如本人此前有对外作出的和本承诺抵触的承诺一律无效，并以此承诺为准。</span>\n</p>\n<p>\n    <br/>\n</p>",
+        "checked": true
+      }
+    ],
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "①存单所有人",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "②证件号码",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "③存单类型",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "④存单账号",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑤借款人姓名",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑥借款人证件号码",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "⑦贷款金额",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "授权人信息",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 19,
+    "keyName": "客户签字",
+    "valueHint": "",
+    "requireable": false,
+    "valueName": "",
+    "editable": true,
+    "spanSize": 2,
+    "picUrl": "",
+    "picBgUrl": ""
+  }
+]

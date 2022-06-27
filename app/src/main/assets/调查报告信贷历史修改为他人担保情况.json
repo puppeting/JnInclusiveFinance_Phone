@@ -1,0 +1,90 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "被担保人姓名",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "与被担保人关系",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "融资机构",
+    "valueHint": "",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保额度",
+    "valueHint": "",
+    "requireable": true,
+    "editable": false,
+    "inputType": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保起止日期",
+    "valueHint": "",
+    "requireable": true,
+    "editable": false,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保方式",
+    "valueHint": "",
+    "requireable": true,
+    "editable": false,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "担保余额",
+    "valueHint": "",
+    "requireable": true,
+    "editable": false,
+    "spanSize": 2
+  }
+]

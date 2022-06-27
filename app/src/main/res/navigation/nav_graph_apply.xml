@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/customerInfoFragment">
+    <!--空白页-->
+    <fragment
+        android:id="@+id/EmptyFragment"
+        android:name="com.inclusive.finance.jh.ui.EmptyFragment"
+        android:label="EmptyFragment"
+        tools:layout="@layout/fragment_empty" />
+    <!--    android:label="客户信息"-->
+    <fragment
+        android:id="@+id/customerInfoFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.CustomerInfoFragment"
+        tools:layout="@layout/fragment_customer_info" />
+
+    <fragment
+        android:id="@+id/ZFInfoFragment"
+        android:name="com.inclusive.finance.jh.ui.ZFInfoFragment"
+        tools:layout="@layout/fragment_customer_info" />
+    <!--    android:label="客户信息"-->
+    <fragment
+        android:id="@+id/GSXXFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.GSXXFragment"
+        tools:layout="@layout/fragment_gsxx" />
+
+    <!--    android:label="家庭成员"-->
+    <fragment
+        android:id="@+id/familyListFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.FamilyListFragment"
+        tools:layout="@layout/fragment_apply_family_list">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity" />
+    </fragment>
+    <!--    android:label="授信申请单"-->
+    <fragment
+        android:id="@+id/creditApplyFormFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.CreditApplyFormFragment"
+        tools:layout="@layout/fragment_credit_apply_form" />
+    <!--    android:label="授信申请-我行业务-查询汇总信息"-->
+    <fragment
+        android:id="@+id/bankDataFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.bank.BankDataFragment"
+        tools:layout="@layout/fragment_bank_data" />
+    <!--    android:label="风险探测"-->
+    <fragment
+        android:id="@+id/riskFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.risk.RiskFragment"
+        tools:layout="@layout/fragment_risk" />
+    <!--    android:label="征信管理"-->
+    <fragment
+        android:id="@+id/creditManagerFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.CreditManagerFragment"
+        tools:layout="@layout/fragment_apply_credit_manager">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity" />
+    </fragment>
+    <!--    android:label="担保信息"-->
+    <fragment
+        android:id="@+id/guaranteeFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.guarantee.GuaranteeFragment"
+        tools:layout="@layout/fragment_guarantee" />
+    <!--    android:label="影像资料"-->
+    <fragment
+        android:id="@+id/picListFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.PicListFragment"
+        tools:layout="@layout/fragment_pic_list" />
+    <!--    android:label="初审结果"-->
+    <fragment
+        android:id="@+id/trialResultFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.TrialResultFragment"
+        tools:layout="@layout/fragment_pic_list" />
+    <!--    android:label="你说我贷"-->
+    <fragment
+        android:id="@+id/vodFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.VodFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="实地调查"-->
+    <fragment
+        android:id="@+id/SDDCFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.SDDCFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="履历收入"-->
+    <fragment
+        android:id="@+id/LLSRFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.LLSRFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="上下游客户"-->
+    <fragment
+        android:id="@+id/SXYKHFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.SXYKHFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="现金流"-->
+    <fragment
+        android:id="@+id/XJLFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.XJLFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="资产负债"-->
+    <fragment
+        android:id="@+id/ZCFZFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.ZCFZFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="损益简表"-->
+    <fragment
+        android:id="@+id/SYJBFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.SYJBFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    <fragment-->
+<!--        android:id="@+id/SYJBFragment"-->
+<!--        android:name="com.inclusive.finance.jh.ui.SYJBFragment2"-->
+<!--        tools:layout="@layout/fragment_report" />-->
+    <!--    android:label="财务简表"-->
+    <fragment
+        android:id="@+id/CWJBFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.CWJBFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="评级指标"-->
+    <fragment
+        android:id="@+id/PJZBFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.PJZBFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="评级指标"-->
+    <fragment
+        android:id="@+id/DCJLFragment"
+        android:name="com.inclusive.finance.jh.ui.investigation.DCJLFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="基本信息"-->
+    <fragment
+        android:id="@+id/BaseInfoFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.BaseInfoFragment"
+        tools:layout="@layout/fragment_report" />
+
+    <!--    android:label="企业用电"-->
+    <fragment
+        android:id="@+id/CompanyElectricFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyElectricFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="企业信息采集"-->
+    <fragment
+        android:id="@+id/CompanyInfoCollectFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyInfoCollectFragment"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity" />
+    </fragment>
+<!--    android:label="企业员工人数"-->
+    <fragment
+        android:id="@+id/CompanyPersonnelFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyPersonnelFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="企业月工资"-->
+    <fragment
+        android:id="@+id/CompanyMonthPayFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyMonthPayFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="法人及关键成员"-->
+    <fragment
+        android:id="@+id/CompanyKeyMembersFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyKeyMembersFragment"
+        tools:layout="@layout/fragment_report">
+        <action
+            android:id="@+id/action_to_navActivity"
+            app:destination="@+id/navigation_navActivity" />
+    </fragment>
+<!--    android:label="检验结论"-->
+    <fragment
+        android:id="@+id/JianYanJieLunFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.JianYanJieLunFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="现场检验表"-->
+    <fragment
+        android:id="@+id/XianChangJianYanBiaoFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.XianChangJianYanBiaoFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="企业问券调查表"-->
+    <fragment
+        android:id="@+id/CompanyWenJuanDiaoChaBiaoFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CompanyWenJuanDiaoChaBiaoFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="经营信息"-->
+    <fragment
+        android:id="@+id/JYXXFragment"
+        android:name="com.inclusive.finance.jh.ui.precredit.JYXXFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="信用情况"-->
+    <fragment
+        android:id="@+id/XYQKFragment"
+        android:name="com.inclusive.finance.jh.ui.precredit.XYQKFragment"
+        tools:layout="@layout/fragment_report" />
+
+<!--    android:label="额度测算"-->
+    <fragment
+        android:id="@+id/EDCSFragment"
+        android:name="com.inclusive.finance.jh.ui.precredit.EDCSFragment"
+        tools:layout="@layout/fragment_report" />
+
+<!--    android:label="合同签约"-->
+    <fragment
+        android:id="@+id/SigningContractListFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.SigningContractListFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="录音录像"-->
+    <fragment
+        android:id="@+id/CreditVodListFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.CreditVodListFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="离柜放款"-->
+    <fragment
+        android:id="@+id/LGFKFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.LGFKFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="检查情况"-->
+    <fragment
+        android:id="@+id/CheckInfoFragment"
+        android:name="com.inclusive.finance.jh.ui.dh.CheckInfoFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="调查报告·简"-->
+    <fragment
+        android:id="@+id/ReportSimpleFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.report.ReportSimpleFragment"
+        tools:layout="@layout/fragment_report" />
+    <!--    android:label="调查报告·在线预览"-->
+    <fragment
+        android:id="@+id/ReportLineFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.report.ReportLineFragment"
+        tools:layout="@layout/fragment_report" />
+<!--    android:label="信息员照片"-->
+    <fragment
+        android:id="@+id/XinXiYuanZhaoPianFragment"
+        android:name="com.inclusive.finance.jh.ui.yx.XinXiYuanZhaoPianFragment"
+        tools:layout="@layout/fragment_wenjuandiaocha_xxyzp" />
+
+<!--    android:label="问卷调查"-->
+    <fragment
+        android:id="@+id/WenJuanDiaoChaFragment"
+        android:name="com.inclusive.finance.jh.ui.yx.WenJuanDiaoChaFragment"
+        tools:layout="@layout/fragment_report" />
+
+<!--    android:label="问卷汇总"-->
+    <fragment
+        android:id="@+id/WenJuanHuiZongFragment"
+        android:name="com.inclusive.finance.jh.ui.yx.WenJuanHuiZongFragment"
+        tools:layout="@layout/fragment_report" />
+
+<!--    android:label="评议签字"-->
+    <fragment
+        android:id="@+id/PingYiQianZiFragment"
+        android:name="com.inclusive.finance.jh.ui.yx.PingYiQianZiFragment"
+        tools:layout="@layout/fragment_report" />
+
+
+    <!--    android:label="单页"-->
+    <activity
+        android:id="@+id/navigation_navActivity"
+        android:name="com.inclusive.finance.jh.ui.NavActivity"
+        tools:layout="@layout/activity_graph_nav" />
+
+</navigation>

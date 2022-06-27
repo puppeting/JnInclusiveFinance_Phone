@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_16"
+            android:paddingEnd="@dimen/dp_16">
+
+            <com.google.android.material.chip.ChipGroup
+
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="false">
+
+                <!-- Chips can be declared here, or added dynamically. -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="新增"
+                    app:chipEndPadding="@dimen/dp_20"
+                    app:chipStartPadding="@dimen/dp_20"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="@{data.seeOnly? View.GONE:View.VISIBLE}"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="编辑"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="@{data.seeOnly? View.GONE:View.VISIBLE}"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipEndPadding="@dimen/dp_20"
+                    app:chipStartPadding="@dimen/dp_20"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="删除"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="@{data.seeOnly? View.GONE:View.VISIBLE}"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipEndPadding="@dimen/dp_20"
+                    app:chipStartPadding="@dimen/dp_20"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_dzy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="录入抵质押信息"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_generate_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="生成合同"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_more"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/dp_8"-->
+            <!--                android:text="更多"-->
+            <!--                android:textColor="@color/colorPrimary"-->
+            <!--                app:drawableEndCompat="@drawable/ic_baseline_more_horiz_24"-->
+            <!--                app:drawableTint="@color/colorPrimary" />-->
+        </LinearLayout>
+
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/mRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_24"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:srlDisableContentWhenLoading="true"
+            app:srlDisableContentWhenRefresh="true"
+            app:srlEnableOverScrollDrag="false">
+
+            <com.scwang.smart.refresh.header.MaterialHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srlAccentColor="@android:color/black" />
+
+            <include
+                android:id="@+id/layout_base_list"
+                layout="@layout/layout_base_list" />
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</layout>

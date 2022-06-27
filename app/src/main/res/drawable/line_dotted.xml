@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+    <stroke
+        android:width="1dp"
+        android:color="@color/black_30000000"
+        android:dashGap="12dp"
+        android:dashWidth="6dp"
+        android:layerType="software"/>
+    <!--破折线的宽度为dashWith，破折线之间的空隙的宽度为dashGap，当dashGap=0dp时，为实线;
+    关于4.0以上设备虚线会变实线的问题，xml中可以添加android:layerType="software"，
+    代码中可以添加view.setLayerType(View.LAYER_TYPE_SOFTWARE, null);-->
+    <!-- 虚线的高度 -->
+    <size android:height="1dp" />
+</shape>

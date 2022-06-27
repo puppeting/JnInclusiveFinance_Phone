@@ -1,0 +1,446 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "1",
+    "valueName": "贷款数据",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "贷款数据",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "申请人"
+      },
+        {
+          "no": "配偶"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "角色"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "原授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "用信余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信次数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "不良笔数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "表外不良余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },{
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "2",
+    "valueName": "存款数据",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "存款数据",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "申请人"
+      },
+        {
+          "no": "配偶"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "角色"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "原授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "用信余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信次数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "不良笔数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "表外不良余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },{
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "3",
+    "valueName": "存款数据",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "存款数据",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "申请人"
+      },
+        {
+          "no": "配偶"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "角色"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "原授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "用信余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信次数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "不良笔数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "表外不良余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },{
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "4",
+    "valueName": "近三年本金逾期结清情况",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "近三年本金逾期结清情况",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "申请人"
+      },
+        {
+          "no": "配偶"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "角色"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "原授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "用信余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信次数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "不良笔数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "表外不良余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },{
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 10,
+    "keyName": "5",
+    "valueName": "近三年利息逾期结清情况",
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 13,
+    "keyName": "",
+    "valueName": "近三年利息逾期结清情况",
+    "spanSize": 6,
+    "listBean": {
+      "list": [{
+        "no": "申请人"
+      },
+        {
+          "no": "配偶"
+        }],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "角色"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "原授信额度(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "用信余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "授信次数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "不良笔数"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "表外不良余额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "8",
+          "value": "五级分类"
+        }
+      ]
+    }
+  },{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 10,
+  "keyName": "6",
+  "valueName": "中间业务",
+  "spanSize": 6
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 22,
+  "keyName": "申请人",
+  "valueName": "",
+  "spanSize": 3
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 22,
+  "keyName": "配偶",
+  "valueName": "",
+  "spanSize": 3
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 10,
+  "keyName": "6",
+  "valueName": "持有产品",
+  "spanSize": 6
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 22,
+  "keyName": "申请人",
+  "valueName": "",
+  "spanSize": 3
+},{
+  "model": "",
+  "dataKey": "",
+  "dataValue": "",
+  "layoutType": 22,
+  "keyName": "配偶",
+  "valueName": "",
+  "spanSize": 3
+},
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "合作关系",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "通过",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "未通过",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "系统审核结论",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "通过",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "未通过",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 23,
+    "valueName": "3.5",
+    "keyName": "我行评价",
+    "editable": true,
+    "requireable": false,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "不良原因陈述",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 5,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "人工干预陈述",
+    "minLines": 5,
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "spanSize": 6
+  }
+]

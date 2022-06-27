@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2018 Google LLC
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <!-- These ids are used in both the menu (navigation.xml) and the nav graph (nav_graph.xml).
+         Each menu item and nav graph fragment represent the same logical item. -->
+    <item name="navigation_main" type="id" />
+    <item name="navigation_mine" type="id" />
+    <item name="navigation_backlog" type="id" />
+    <item name="navigation_applyList" type="id" />
+    <item name="navigation_investigationList" type="id" />
+    <item name="navigation_creditApproval" type="id" />
+    <item name="navigation_creditApproval2" type="id" />
+    <item name="navigation_creditApproval3" type="id" />
+    <item name="navigation_creditListFragment" type="id" />
+    <item name="navigation_applyActivity" type="id" />
+    <item name="navigation_jiNianJianCaiJiListFragment" type="id" />
+    <item name="navigation_jiNianJianFeiXianChangJianChaListFragment" type="id" />
+    <item name="navigation_jiNianJianXianChangJianChaListFragment" type="id" />
+    <item name="navigation_JiNianJianYongXinListFragment" type="id" />
+    <item name="navigation_LeaveApprovalListFragment" type="id" />
+    <item name="navigation_VisitListFragment" type="id" />
+    <item name="navigation_PreCreditFragment" type="id" />
+    <item name="navigation_SunPreCreditTaskFragment" type="id" />
+    <item name="navigation_VisitApprovalFragment" type="id" />
+    <item name="navigation_ClockInListFragment" type="id" />
+    <item name="navigation_TrackFragment" type="id" />
+    <item name="navigation_PointClusterFragment" type="id" />
+    <item name="navigation_PicAddListFragment" type="id" />
+    <item name="navigation_YongXinGuanLiListFragment" type="id" />
+    <item name="navigation_QRCodeListFragment" type="id" />
+    <item name="navigation_ShouLiListFragment" type="id" />
+    <item name="navigation_RiChangJianListFragment" type="id" />
+    <item name="navigation_XinXiYuanListFragment" type="id" />
+    <item name="navigation_WenJuanDiaoChaListFragment" type="id" />
+    <item name="navigation_ShouXinPingYiListFragment" type="id" />
+    <item name="navigation_EDuBiDuiListFragment" type="id" />
+    <item name="navigation_RiChangJianListFragment2" type="id" />
+    <item name="navigation_shouJianListFragment2" type="id" />
+
+
+</resources>

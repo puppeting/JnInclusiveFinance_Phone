@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/customerInfoFragment">
+
+    <!--空白页-->
+    <fragment
+        android:id="@+id/EmptyFragment"
+        android:name="com.inclusive.finance.jh.ui.EmptyFragment"
+        android:label="EmptyFragment"
+        tools:layout="@layout/fragment_empty" />
+    <!--信息概况-->
+    <fragment
+        android:id="@+id/customerInfoFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.CustomerInfoFragment"
+        android:label="customerInfoFragment"
+        tools:layout="@layout/fragment_customer_info" />
+    <!--风险探测-->
+    <fragment
+        android:id="@+id/riskFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.risk.RiskFragment"
+        android:label="riskFragment"
+        tools:layout="@layout/fragment_risk" />
+    <!--征信授权-->
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditFragment"
+        android:label="creditFragment"
+        tools:layout="@layout/fragment_credit" />
+    <!--征信授权书-->
+    <fragment
+        android:id="@+id/creditAuthorizationFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditAuthorizationFragment"
+        android:label="creditFragment"
+        tools:layout="@layout/fragment_credit_authorization_info" />
+    <!--查看征信解析-->
+    <fragment
+        android:id="@+id/creditAnalysisFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditAnalysisFragment"
+        android:label="creditAnalysisFragment"
+        tools:layout="@layout/fragment_credit_analysis" />
+    <!--司法查询-->
+    <fragment
+        android:id="@+id/creditHuiFaWangFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.credit.CreditHuiFaWangFragment"
+        android:label="creditHuiFaWangFragment"
+        tools:layout="@layout/fragment_cerdit_huifawang" />
+    <!--我行业务-->
+    <fragment
+        android:id="@+id/bankDataFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.bank.BankDataFragment"
+        tools:layout="@layout/fragment_bank_data" />
+    <!--修改密码-->
+    <fragment
+        android:id="@+id/modifyPasswordFragment"
+        android:name="com.inclusive.finance.jh.ui.account.ModifyPasswordFragment"
+        tools:layout="@layout/fragment_modify_password" />
+    <!--影像资料-->
+    <fragment
+        android:id="@+id/picListFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.PicListFragment"
+        tools:layout="@layout/fragment_pic_list" />
+     <fragment
+        android:id="@+id/addYSXFragment"
+        android:name="com.inclusive.finance.jh.ui.AddYSXFragment"
+        tools:layout="@layout/fragment_pic_list" />
+     <fragment
+        android:id="@+id/addFuPinListFragment"
+        android:name="com.inclusive.finance.jh.ui.AddFpFragment"
+        tools:layout="@layout/fragment_pic_list" />
+
+    <!--影像资料-->
+    <fragment
+        android:id="@+id/LGFKYZDFragment"
+        android:name="com.inclusive.finance.jh.ui.creditmgr.LGFKYZDFragment"
+        tools:layout="@layout/fragment_lgfk" />
+    <!--问卷汇总-->
+    <fragment
+        android:id="@+id/WenJuanHuiZongFragment"
+        android:name="com.inclusive.finance.jh.ui.yx.WenJuanHuiZongFragment"
+        tools:layout="@layout/fragment_wenjuandiaocha_wjhz" />
+    <!--共有人权利-->
+    <fragment
+        android:id="@+id/GuaranteeBetShareFragment"
+        android:name="com.inclusive.finance.jh.ui.apply.guarantee.GuaranteeBetShareFragment"
+        android:label="bankDataBaseFragment"
+        tools:layout="@layout/fragment_guarantee_share" />
+    <!--合同签约-->
+    <fragment
+        android:id="@+id/contractFragment"
+        android:name="com.inclusive.finance.jh.ui.ContractFragment"
+        android:label="creditFragment"
+        tools:layout="@layout/fragment_credit" />
+</navigation>

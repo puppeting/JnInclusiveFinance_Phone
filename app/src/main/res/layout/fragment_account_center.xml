@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.MainActivityModel" />
+        <import type="android.view.View"/>
+    </data>
+
+    <com.flyco.roundview.RoundLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:rv_isRippleEnable="false"
+        app:rv_backgroundColor="@color/app_bg"
+        app:rv_cornerRadius="@dimen/dp_8">
+
+        <com.flyco.roundview.RoundLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            app:rv_backgroundColor="@color/white"
+            app:rv_cornerRadius_TL="@dimen/dp_8"
+            app:rv_cornerRadius_TR="@dimen/dp_8"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dp_20">
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginStart="@dimen/dp_10"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="账号密码"
+                android:textColor="@color/color_text_title" />
+
+            <ImageView
+                android:id="@+id/bt_close"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:src="@drawable/ic_baseline_close_24" />
+        </com.flyco.roundview.RoundLinearLayout>
+
+        <TextView
+            android:id="@+id/bt_pwd_change"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="修改登录密码"
+            android:textColor="@color/color_text_subTitle"
+            app:drawableEndCompat="@drawable/ic_baseline_navigate_next_24" />
+
+        <LinearLayout
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_45"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:text="使用手势登录"
+                android:textColor="@color/color_text_subTitle" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/isGestureLogin"
+                android:checked="@{data.isGestureLogin()}"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bt_gesture_change"
+            android:visibility="@{data.isGestureLogin? View.VISIBLE:View.GONE}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            android:text="修改手势密码"
+            android:textColor="@color/color_text_subTitle"
+            app:drawableEndCompat="@drawable/ic_baseline_navigate_next_24" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_45"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/margin_45"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:text="使用指纹登录"
+                android:textColor="@color/color_text_subTitle" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/isFingerLogin"
+                android:checked="@{data.isFingerLogin()}"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </com.flyco.roundview.RoundLinearLayout>
+</layout>

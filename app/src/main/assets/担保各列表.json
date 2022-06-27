@@ -1,0 +1,430 @@
+[
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "自然人担保分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": true,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "10",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "16",
+          "value": "姓名"
+        },
+        {
+          "key": "",
+          "ems": "16",
+          "value": "身份证号"
+        },
+        {
+          "key": "",
+          "ems": "16",
+          "value": "联系方式"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "房产抵押分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": true,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "4",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "共同所有人"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "身份证号"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "与借款人关系"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "联系电话"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "房屋坐落"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "抵押物权证号"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "公司担保分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": true,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "6",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "13",
+          "value": "担保公司名称"
+        },
+        {
+          "key": "",
+          "ems": "13",
+          "value": "本次担保金额(万)"
+        },
+        {
+          "key": "",
+          "ems": "13",
+          "value": "反担保分析"
+        },
+        {
+          "key": "",
+          "ems": "13",
+          "value": "描述"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "企业担保分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": true,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "4",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "18",
+          "value": "担保公司名称"
+        },
+        {
+          "key": "",
+          "ems": "18",
+          "value": "本次担保金额(万)"
+        },
+        {
+          "key": "",
+          "ems": "18",
+          "value": "反担保分析"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "车辆抵押分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": true,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "8",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "车牌号"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "运输工具类型"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "品牌型号"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "抵押物评估价值(万元)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "抵押比例(%)"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "抵押物权证号"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "存单质押分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": false,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "3",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "存单账号"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "存单名称"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "存单金额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "存入日期"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "到期利息(元)"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "到期日期"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "质押比例(%)"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "存单所属行"
+        },
+        {
+          "key": "",
+          "ems": "6",
+          "value": "备注信息"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "网批质押分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": false,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "3",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "船名"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "申请人"
+        },
+        {
+          "key": "12",
+          "value": "渔业船网工具指标批准书号"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "双控功率(千瓦)"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "船长(米)"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "总吨位"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "船体材质"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "船舶造价(万元)"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "批准书有效期至"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "开工申报书申报单位"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "备注信息"
+        }
+      ]
+    }
+  },
+  {
+    "model": "",
+    "layoutType": 13,
+    "keyName": "1",
+    "valueName": "网批质押分析",
+    "spanSize": 3,
+    "listBean": {
+      "equally": false,
+      "list": [],
+      "titleList": [
+        {
+          "key": "no",
+          "ems": "3",
+          "value": "序号"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "船舶所有人名称"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "所占股份(%)"
+        },
+        {
+          "key": "",
+          "ems": "14",
+          "value": "居民身份证号码/公司注册号"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "取得所有权日期"
+        },
+        {
+          "key": "",
+          "ems": "9",
+          "value": "所有权登记证书编号"
+        },
+        {
+          "key": "",
+          "ems": "10",
+          "value": "船名"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "船舶种类"
+        },
+        {
+          "key": "",
+          "ems": "5",
+          "value": "总吨位"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "渔船互助保险价值(万元)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "渔船互助保险金额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "渔船互助保险承保比例(%)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "船舶全损保险第一受益人"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "船舶全损保险投保比例(%)"
+        },
+        {
+          "key": "",
+          "ems": "12",
+          "value": "船舶全损保险金额(万元)"
+        },
+        {
+          "key": "",
+          "ems": "7",
+          "value": "抵押比例(%)"
+        }
+      ]
+    }
+  }
+]

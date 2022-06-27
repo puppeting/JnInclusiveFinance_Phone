@@ -1,0 +1,640 @@
+[
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "申请人",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "身份证号码",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "客户经理",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "性别",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "男",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "女",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "客户类型",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "老客户",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "新客户",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "具体类型",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "首次申请",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "年龄",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "22以下",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "22-30",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "45-55",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "55-65",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "具体年龄",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "婚姻状况",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "已婚",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "再婚",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "丧偶",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "离异",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "未婚",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "家庭人数",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "子女职业(多选)",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "上学/年幼",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "参与经营",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "其他工作",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无业",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无子女",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "具体信息",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "居住年限",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "1年以下",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "1-3年",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "3-5年",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "5-10年",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "10年以上",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "具体年限",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "住房状况(多选)",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "自有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "按揭",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "家人拥有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "住经营场所",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "租赁",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "其他",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": false,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "本地户口",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "有",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "无",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "家庭住址",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "移动电话",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "固定电话",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "工作单位",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "工作年限",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "个人职务",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "单位地址",
+    "editable": true,
+    "requireable": true,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "个人年薪",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "其他收入",
+    "editable": true,
+    "requireable": true,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "配偶姓名",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "身份证号码",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "移动电话",
+    "editable": true,
+    "requireable": false,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "工作单位",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 6
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "工作年限",
+    "editable": true,
+    "requireable": false,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "个人年薪",
+    "editable": true,
+    "requireable": false,
+    "minLines": 1,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 12,
+    "valueName": "",
+    "keyName": "获客来源",
+    "enums12": [
+      {
+        "checked": false,
+        "valueName": "宣传单",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "微信",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "报纸/杂志",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "收音机",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "广告牌",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "互联网",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "移动广告",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "朋友/家人",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "微贷客户",
+        "keyName": ""
+      },
+      {
+        "checked": false,
+        "valueName": "本行其他客户",
+        "keyName": ""
+      }
+    ],
+    "requireable": true,
+    "isSingleChecked": true,
+    "editable": true,
+    "spanSize": 2
+  },
+  {
+    "model": "",
+    "dataKey": "",
+    "dataValue": "",
+    "layoutType": 11,
+    "valueName": "",
+    "keyName": "备注(客户经理姓名/其他获客来源)",
+    "editable": true,
+    "requireable": false,
+    "inputType": 1,
+    "minLines": 1,
+    "spanSize": 2
+  }
+]

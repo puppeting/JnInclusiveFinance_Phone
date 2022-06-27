@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/selectlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+                app:rv_strokeWidth="1dp">
+
+                <androidx.appcompat.widget.AppCompatCheckedTextView
+                    android:id="@+id/down_rwmc"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:drawableEnd="@drawable/selector_triangle"
+                    android:gravity="center_vertical"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/sp_12"
+                    tools:text="TextV" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+
+            <com.flyco.roundview.RoundLinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:visibility="gone"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@color/line"
+                app:rv_strokeWidth="1dp">
+
+                <com.inclusive.finance.jh.widget.ClearWriteEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@null"
+                    android:hint="客户姓名或身份证号"
+                    android:padding="@dimen/dp_5"
+                    android:textColorHint="#868686"
+                    android:textSize="@dimen/sp_12" />
+            </com.flyco.roundview.RoundLinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_search"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="@dimen/dp_16"
+                android:onClick="@{(v)->presenterClick.onClick(v)}"
+                android:text="查询"
+                android:textSize="@dimen/sp_14" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_more"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/dp_8"-->
+            <!--                android:text="更多"-->
+            <!--                android:textColor="@color/colorPrimary"-->
+            <!--                app:drawableEndCompat="@drawable/ic_baseline_more_horiz_24"-->
+            <!--                app:drawableTint="@color/colorPrimary" />-->
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="@dimen/dp_20"
+            android:paddingEnd="@dimen/dp_20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectlay">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:singleLine="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{(v)->presenterClick.onClick(v)}"
+                    android:text="修改"
+                    android:textColor="@color/colorPrimary"
+                    app:chipBackgroundColor="@color/white"
+                    app:chipCornerRadius="5dp"
+                    app:chipEndPadding="@dimen/margin_20"
+                    app:chipStartPadding="@dimen/margin_20"
+                    app:chipStrokeColor="@color/colorPrimary"
+                    app:chipStrokeWidth="1dp"
+                    app:rippleColor="@color/white" />
+            </com.google.android.material.chip.ChipGroup>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/mRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dp_24"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLay"
+            app:layout_goneMarginTop="@dimen/dp_10"
+            app:srlEnableFooterTranslationContent="false"
+            app:srlEnableOverScrollDrag="false"
+            app:srlFooterHeight="100dp"
+            app:srlFooterInsetStart="24dp">
+
+            <com.scwang.smart.refresh.header.MaterialHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:srlAccentColor="@android:color/black" />
+
+            <include
+                android:id="@+id/layout_base_list"
+                layout="@layout/layout_base_list" />
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+        <!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:visibility="@{data.seeOnly?View.GONE:View.VISIBLE}"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="#fbdac6"-->
+<!--            android:gravity="end|center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:paddingTop="@dimen/dp_4"-->
+<!--            android:paddingBottom="@dimen/dp_4"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent">-->
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/bt_save"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/margin_45"-->
+<!--                android:layout_marginEnd="@dimen/dp_15"-->
+<!--                android:onClick="@{(v)->presenterClick.onClick(v)}"-->
+<!--                android:text="保存" />-->
+
+<!--        </LinearLayout>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

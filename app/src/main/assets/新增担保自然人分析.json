@@ -1,0 +1,56 @@
+[
+  {
+    "layoutType": 14,
+    "keyName": "",
+    "valueHint": "身份证正面",
+    "requireable": true,
+    "valueName": "暂无",
+    "editable": true,
+    "spanSize": 3,
+    "isGallery": true,
+    "picUrl": "",
+    "picBgUrl": "",
+    "picDeleteUrl": "暂无"
+  },{
+  "layoutType": 14,
+  "keyName": "",
+  "valueHint": "身份证反面",
+  "requireable": true,
+  "valueName": "暂无",
+  "editable": true,
+  "spanSize": 3,
+  "isGallery": true,
+  "picUrl": "",
+  "picBgUrl": "",
+  "picDeleteUrl": "暂无"
+},
+  {
+    "layoutType": 11,
+    "inputType": 1,
+    "valueName": "",
+    "valueHint": "请输入姓名",
+    "keyName": "姓名",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入身份证号",
+    "keyName": "身份证号",
+    "requireable": true,
+    "editable": true,
+    "inputType": 1,
+    "spanSize": 6
+  },
+  {
+    "layoutType": 11,
+    "valueName": "",
+    "valueHint": "请输入手机号",
+    "keyName": "联系方式",
+    "requireable": true,
+    "editable": true,
+    "spanSize": 6
+  }
+]

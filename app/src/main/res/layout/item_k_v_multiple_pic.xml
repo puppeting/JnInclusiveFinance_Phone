@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="recyclerView"
+            type="androidx.recyclerview.widget.RecyclerView" />
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.BaseTypeBean" />
+
+        <import type="com.blankj.utilcode.util.StringUtils" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingStart="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_8"
+            app:layout_gravity="@{data.layoutGravity}"
+            app:layout_width="@{data.width==-2?recyclerView.width/6*2:data.width}">
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@{data.absKey}"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/sp_14"
+                android:visibility="@{StringUtils.isEmpty(data.absKey())?View.INVISIBLE:View.VISIBLE}"
+                app:drawableStartCompat="@{data.requireable?@drawable/ic_baseline_lens_24:null}"
+                app:drawableTint="@{data.requireable?@color/Red:@color/white}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="TextView" />
+
+            <com.flyco.roundview.RoundFrameLayout
+
+                android:id="@+id/roundFrameLayout"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:minWidth="234dp"
+                android:padding="1dp"
+                android:layout_marginStart="@dimen/dp_5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_key"
+                app:rv_backgroundColor="@color/white"
+                app:rv_cornerRadius="2dp"
+                app:rv_strokeColor="@{data.picList.size()>0?@color/line:@color/DarkOrange}"
+                app:rv_strokeWidth="1dp">
+
+                <ImageView
+                    android:id="@+id/img_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:minWidth="234dp"
+                    android:paddingStart="8dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="5dp"
+                    />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+            </com.flyco.roundview.RoundFrameLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_8"
+                android:text="编辑"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roundFrameLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</layout>

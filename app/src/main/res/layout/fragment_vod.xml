@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.inclusive.finance.jh.bean.model.ApplyModel" />
+        <import type="com.blankj.utilcode.util.ScreenUtils" />
+        <import type="android.view.View" />
+
+        <variable
+            name="presenterClick"
+            type="com.inclusive.finance.jh.interfaces.PresenterClick" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            app:layout_height="@{ScreenUtils.getScreenWidth()/3*4}"
+            android:layout_width="match_parent"
+            android:layout_height="1440px"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.inclusive.finance.jh.widget.SampleCoverVideo
+                android:id="@+id/gsyVideoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/videoTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/dp_15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                tools:text="2012-16-59" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/thumb"-->
+            <!--                android:src="@mipmap/icon_cover"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent" />-->
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_record"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_45"
+            android:layout_gravity="center"
+            android:onClick="@{(v)->presenterClick.onClick(v)}"
+            android:text="录制"
+            android:visibility="@{data.seeOnly? View.GONE:View.VISIBLE}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+  <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fbdac6"
+            android:gravity="end|center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/bt_save"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="@dimen/margin_45"-->
+<!--                android:layout_marginEnd="@dimen/dp_15"-->
+<!--                android:onClick="@{(v)->presenterClick.onClick(v)}"-->
+<!--                android:text="核查" />-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_45"
+                android:layout_marginEnd="@dimen/dp_15"
+                android:onClick="@{(v)->presenterClick.onClick(v)}"
+                android:text="下一步" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

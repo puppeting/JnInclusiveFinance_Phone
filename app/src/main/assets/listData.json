@@ -1,0 +1,44 @@
+{
+  "list": [
+    {
+      "id": "320302",
+      "khxm": "zhangsan",
+      "ywghq": "有",
+      "ghrjg": "支行",
+      "ghr": "ssss",
+      "no": 1
+    }
+  ],
+  "titleList": [
+    {
+      "key": "no",
+      "ems": "5",
+      "value": "序号"
+    },
+    {
+      "key": "khxm",
+      "ems": "10",
+      "value": "客户姓名"
+    },
+    {
+      "key": "id",
+      "ems": "10",
+      "value": "身份证号"
+    },
+    {
+      "key": "ywghq",
+      "ems": "10",
+      "value": "有无管户权"
+    },
+    {
+      "key": "ghr",
+      "ems": "10",
+      "value": "管户人"
+    },
+    {
+      "key": "ghrjg",
+      "ems": "13",
+      "value": "管户机构简称"
+    }
+  ]
+}
